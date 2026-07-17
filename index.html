@@ -248,7 +248,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
 </head>
 <body>
 
-<nav>
+<nav id="top">
   <div class="logo" onclick="showPage('accueil',null)">
     <img src="logo-light.png" alt="AB WebStudio" style="height:56px;width:auto;">
   </div>
@@ -543,7 +543,7 @@ function showPage(id,btn){
   target.classList.add('active');
   document.querySelectorAll('.nav-links button').forEach(b=>b.classList.remove('active'));
   if(btn)btn.classList.add('active');
-  document.documentElement.scrollTop=0;
+  document.getElementById('top').scrollIntoView();
   document.body.scrollTop=0;
 }
 
