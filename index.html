@@ -539,11 +539,12 @@ startAuto();
 function showPage(id,btn){
   document.querySelectorAll('.page').forEach(p=>{p.classList.remove('active');p.style.display='none';});
   const target=document.getElementById('page-'+id);
-  target.classList.add('active');
   target.style.display='block';
+  target.classList.add('active');
   document.querySelectorAll('.nav-links button').forEach(b=>b.classList.remove('active'));
   if(btn)btn.classList.add('active');
-  window.scrollTo(0,0);
+  document.documentElement.scrollTop=0;
+  document.body.scrollTop=0;
 }
 
 let chatOpen=false,history=[];
