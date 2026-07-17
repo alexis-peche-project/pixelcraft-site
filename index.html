@@ -21,10 +21,10 @@ html{scroll-behavior:smooth;}
 body{font-family:var(--body);background:var(--white);color:var(--ink);font-size:15px;line-height:1.65;}
 
 /* NAV */
-nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:62px;}
+nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:120px;}
 .logo{font-family:var(--display);font-size:22px;color:var(--ink);cursor:pointer;display:flex;align-items:center;gap:10px;}
 .logo-icon{width:34px;height:34px;background:var(--em);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px;font-weight:700;font-family:var(--body);flex-shrink:0;}
-.logo span{color:var(--em);}
+.logo span{color:var(--em);}.logo img{height:108px;width:180px;object-fit:contain;}
 .nav-links{display:flex;align-items:center;gap:2px;}
 .nav-links button{background:none;border:none;color:var(--muted);font-family:var(--body);font-size:14px;font-weight:500;padding:7px 14px;border-radius:8px;cursor:pointer;transition:all .18s;}
 .nav-links button:hover,.nav-links button.active{background:var(--em-xl);color:var(--em-d);}
@@ -200,7 +200,7 @@ nav{position:sticky;top:0;z-index:200;background:rgba(255,255,255,.96);backdrop-
 footer{background:var(--ink);padding:32px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
 .footer-logo{font-family:var(--display);font-size:18px;color:#fff;display:flex;align-items:center;gap:8px;}
 .footer-logo-icon{width:28px;height:28px;background:var(--em);border-radius:6px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:700;font-family:var(--body);}
-.footer-logo span{color:var(--em);}
+.footer-logo span{color:var(--em);}.footer-logo img {height: 108px;width: 180px;object-fit: contain;}
 footer p{font-size:12px;color:rgba(255,255,255,.3);}
 
 /* CHATBOT */
@@ -237,6 +237,7 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
 
 @media(max-width:768px){
   nav{padding:0 20px;}.nav-links{display:none;}
+  .logo img,.footer-logo img{height:72px;width:120px;}
   .slide-content{padding:0 24px;}.slide-content h1{font-size:36px;}
   .section{padding:48px 20px;}
   .services-grid,.temo-grid,.blog-grid,.real-grid,.qui-wrap,.formations,.contact-grid,.map-infos{grid-template-columns:1fr;}
@@ -260,6 +261,8 @@ footer p{font-size:12px;color:rgba(255,255,255,.3);}
     <button class="nav-cta" onclick="showPage('contact',this)">Devis gratuit</button>
   </div>
 </nav>
+  
+  
 
 <!-- ACCUEIL -->
 <div id="page-accueil" class="page active">
