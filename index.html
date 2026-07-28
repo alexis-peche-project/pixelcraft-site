@@ -878,448 +878,6 @@ footer{background:#050F08;padding:0;}
 </div>
 
 <!-- TICKER -->
-<div class="ticker-outer">
-  <div class="ticker-badge"><span>AB WebStudio</span></div>
-  <div class="ticker-wrap">
-    <div class="ticker-track">
-      <div class="ticker-item">✔️ Devis gratuit sous 48h</div><div class="ticker-sep">·</div>
-      <div class="ticker-item">✔️ Cahier des charges inclus</div><div class="ticker-sep">·</div>
-      <div class="ticker-item">✔️ Réunion de lancement offerte</div><div class="ticker-sep">·</div>
-      <div class="ticker-item">✔️ Corrections incluses</div><div class="ticker-sep">·</div>
-      <div class="ticker-item">✔️ Support après livraison</div><div class="ticker-sep">·</div>
-      <div class="ticker-item">✔️ Livraison en 2 à 4 semaines</div><div class="ticker-sep">·</div>
-      <div class="ticker-item">✔️ -40% vs agences classiques</div><div class="ticker-sep">·</div>
-      <div class="ticker-item">✔️ 100% clients satisfaits</div><div class="ticker-sep">·</div>
-      <div class="ticker-item">✔️ Devis gratuit sous 48h</div><div class="ticker-sep">·</div>
-      <div class="ticker-item">✔️ Cahier des charges inclus</div><div class="ticker-sep">·</div>
-      <div class="ticker-item">✔️ Réunion de lancement offerte</div><div class="ticker-sep">·</div>
-      <div class="ticker-item">✔️ Corrections incluses</div><div class="ticker-sep">·</div>
-      <div class="ticker-item">✔️ Support après livraison</div><div class="ticker-sep">·</div>
-      <div class="ticker-item">✔️ Livraison en 2 à 4 semaines</div><div class="ticker-sep">·</div>
-      <div class="ticker-item">✔️ -40% vs agences classiques</div><div class="ticker-sep">·</div>
-      <div class="ticker-item">✔️ 100% clients satisfaits</div><div class="ticker-sep">·</div>
-    </div>
-  </div>
-</div>
-
-<footer>
-  <div class="footer-top">
-    <div class="footer-brand">
-      <img src="logo-dark.png" alt="AB WebStudio" style="height:52px;width:52px;object-fit:contain;">
-      <p>Création de sites web modernes, rapides et bien référencés. Basé à Nice, actif partout en France.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Navigation</h4>
-      <ul>
-        <li><button onclick="showPage('accueil')">Accueil</button></li>
-        <li><button onclick="showPage('qui')">Qui suis-je</button></li>
-        <li><button onclick="showPage('realisations')">Réalisations</button></li>
-        <li><button onclick="showPage('processus')">Processus</button></li>
-        <li><button onclick="showPage('blog')">Blog</button></li>
-        <li><button onclick="showPage('localiser')">Localiser</button></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Services</h4>
-      <ul>
-        <li><button onclick="showPage('service-vitrine')">Site vitrine</button></li>
-        <li><button onclick="showPage('service-ecommerce')">E-commerce</button></li>
-        <li><button onclick="showPage('service-seo')">SEO & Blog</button></li>
-        <li><button onclick="showPage('service-refonte')">Refonte de site</button></li>
-        <li><button onclick="showPage('service-com')">Communication digitale</button></li>
-        <li><button onclick="showPage('service-sport')">Sport Business</button></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <ul>
-        <li><a href="mailto:contact@ab-webstudio.fr">contact@ab-webstudio.fr</a></li>
-        <li><a href="tel:+33628966259">06 28 96 62 59</a></li>
-        <li><button onclick="showPage('contact')">Devis gratuit</button></li>
-        <li><button onclick="showPage('localiser')">Nice & Côte d'Azur</button></li>
-      </ul>
-    </div>
-  </div>
-  <div style="border-top:1px solid rgba(255,255,255,.07);">
-    <div class="footer-bottom">
-      <p>© 2026 AB WebStudio — Micro-entreprise · Alexis Bernard · Nice</p>
-      <div class="footer-bottom-links">
-        <a href="#" onclick="showPage('mentions');return false;">Mentions légales</a>
-        <a href="#" onclick="showPage('cgv');return false;">CGV</a>
-        <a href="mailto:contact@ab-webstudio.fr">contact@ab-webstudio.fr</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- CHATBOT -->
-<button id="chat-btn" onclick="toggleChat()">
-  <i class="ti ti-message-chatbot" id="chat-icon"></i>
-  <div class="chat-notif" id="chat-notif">1</div>
-</button>
-<div id="chat-window">
-  <div class="chat-header">
-    <div class="chat-avatar">🤖</div>
-    <div class="chat-header-info"><h4>Assistant AB WebStudio</h4><div class="chat-online"><div class="chat-online-dot"></div> En ligne · Alexis répond sous 48h</div></div>
-    <button id="chat-close" onclick="toggleChat()">×</button>
-  </div>
-  <div class="chat-messages" id="chat-messages">
-    <div class="msg bot">👋 Bonjour ! Je suis l'assistant AB WebStudio.<br><br>Posez-moi vos questions sur nos services, tarifs ou délais !<div class="msg-time">maintenant</div></div>
-  </div>
-  <div class="chat-typing" id="chat-typing"><span></span><span></span><span></span></div>
-  <div class="chat-suggestions" id="chat-suggestions">
-    <button class="sugg-btn" onclick="sendSugg(this)">💰 Quels sont les tarifs ?</button>
-    <button class="sugg-btn" onclick="sendSugg(this)">⏱ Quel délai de livraison ?</button>
-    <button class="sugg-btn" onclick="sendSugg(this)">🛒 Vous faites du Shopify ?</button>
-    <button class="sugg-btn" onclick="sendSugg(this)">📍 Vous êtes basé où ?</button>
-  </div>
-  <div class="chat-input-row">
-    <textarea id="chat-input" placeholder="Posez votre question..." rows="1" onkeydown="handleKey(event)"></textarea>
-    <button id="chat-send" onclick="sendMessage()"><i class="ti ti-send"></i></button>
-  </div>
-</div>
-<!-- PAGE SERVICE VITRINE -->
-<div id="page-service-vitrine" class="page">
-  <div class="service-hero">
-    <img src="exp-vitrine.png" alt="Site vitrine">
-    <div class="service-hero-overlay"></div>
-    <div class="service-hero-content">
-      <div class="eyebrow">Service</div>
-      <h1>Site Vitrine</h1>
-      <p>Votre présence en ligne professionnelle, mobile-first et optimisée SEO — livrée en 2 à 4 semaines.</p>
-    </div>
-  </div>
-  <div class="section">
-    <div class="eyebrow">Ce qui est inclus</div>
-    <h2>Un site vitrine clé en main</h2>
-    <p>De la maquette à la mise en ligne, je gère tout. Vous n'avez qu'à valider.</p>
-    <div class="service-features">
-      <div class="service-feature"><div class="icon">🎨</div><h3>Design sur-mesure</h3><p>Charte graphique personnalisée, typographie choisie, identité visuelle cohérente avec votre activité.</p></div>
-      <div class="service-feature"><div class="icon">📱</div><h3>100% responsive</h3><p>Votre site s'adapte parfaitement à tous les écrans — mobile, tablette et desktop.</p></div>
-      <div class="service-feature"><div class="icon">🔍</div><h3>SEO intégré</h3><p>Balises optimisées, vitesse de chargement, structure pensée pour Google dès le départ.</p></div>
-      <div class="service-feature"><div class="icon">📄</div><h3>Pages incluses</h3><p>Accueil, À propos, Services, Contact, Blog — tout ce dont vous avez besoin pour démarrer.</p></div>
-      <div class="service-feature"><div class="icon">🌐</div><h3>Nom de domaine & hébergement</h3><p>Je gère l'achat du domaine et la configuration de l'hébergement sur GitHub Pages ou OVH.</p></div>
-      <div class="service-feature"><div class="icon">🛠️</div><h3>Support après livraison</h3><p>Je reste disponible après la mise en ligne pour toute question, correction ou évolution.</p></div>
-    </div>
-    <div class="service-cta">
-      <div>
-        <h3>Prêt à lancer votre site vitrine ?</h3>
-        <p>Devis gratuit sous 48h — sans engagement. Réponse garantie.</p>
-      </div>
-      <div class="service-price">
-        <div class="price">500€</div>
-        <div class="price-label">À partir de · TVA non applicable</div>
-      </div>
-      <button class="btn-primary" onclick="showPage('contact')">Demander un devis →</button>
-    </div>
-  </div>
-</div>
-
-<!-- PAGE SERVICE ECOMMERCE -->
-<div id="page-service-ecommerce" class="page">
-  <div class="service-hero">
-    <img src="exp-ecommerce.png" alt="E-commerce">
-    <div class="service-hero-overlay"></div>
-    <div class="service-hero-content">
-      <div class="eyebrow">Service</div>
-      <h1>E-Commerce</h1>
-      <p>Boutiques Shopify, PrestaShop ou WooCommerce clés en main — catalogue, paiement, gestion des stocks.</p>
-    </div>
-  </div>
-  <div class="section">
-    <div class="eyebrow">Ce qui est inclus</div>
-    <h2>Votre boutique en ligne prête à vendre</h2>
-    <p>Une boutique e-commerce complète, configurée et optimisée pour convertir vos visiteurs en clients.</p>
-    <div class="service-features">
-      <div class="service-feature"><div class="icon">🛒</div><h3>Catalogue produits</h3><p>Intégration de vos produits, descriptions, photos, variantes et prix. Gestion simplifiée.</p></div>
-      <div class="service-feature"><div class="icon">💳</div><h3>Paiement sécurisé</h3><p>Intégration Stripe, PayPal et autres moyens de paiement. SSL inclus.</p></div>
-      <div class="service-feature"><div class="icon">📦</div><h3>Gestion des stocks</h3><p>Suivi des stocks en temps réel, alertes de rupture, gestion des commandes.</p></div>
-      <div class="service-feature"><div class="icon">🚚</div><h3>Livraison & frais de port</h3><p>Configuration des zones de livraison, transporteurs et calcul automatique des frais.</p></div>
-      <div class="service-feature"><div class="icon">📈</div><h3>SEO e-commerce</h3><p>Fiches produits optimisées, URLs propres, balises structurées pour Google Shopping.</p></div>
-      <div class="service-feature"><div class="icon">📊</div><h3>Analytics & suivi</h3><p>Google Analytics, suivi des conversions, tableau de bord des ventes.</p></div>
-    </div>
-    <div class="service-cta">
-      <div>
-        <h3>Lancez votre boutique en ligne</h3>
-        <p>Shopify, PrestaShop ou WooCommerce — on choisit ensemble la meilleure solution pour vous.</p>
-      </div>
-      <div class="service-price">
-        <div class="price">800€</div>
-        <div class="price-label">À partir de · TVA non applicable</div>
-      </div>
-      <button class="btn-primary" onclick="showPage('contact')">Demander un devis →</button>
-    </div>
-  </div>
-</div>
-
-<!-- PAGE SERVICE SEO -->
-<div id="page-service-seo" class="page">
-  <div class="service-hero">
-    <img src="exp-seo.png" alt="SEO & Blog">
-    <div class="service-hero-overlay"></div>
-    <div class="service-hero-content">
-      <div class="eyebrow">Service</div>
-      <h1>SEO & Blog</h1>
-      <p>Remontez dans les résultats Google grâce à une stratégie de contenu optimisée et durable.</p>
-    </div>
-  </div>
-  <div class="section">
-    <div class="eyebrow">Ce qui est inclus</div>
-    <h2>Visible sur Google, durablement</h2>
-    <p>Le SEO n'est pas de la magie — c'est de la méthode. Je mets en place les bases techniques et éditoriales pour que Google vous trouve.</p>
-    <div class="service-features">
-      <div class="service-feature"><div class="icon">🔍</div><h3>Audit SEO</h3><p>Analyse complète de votre site existant : performances, balises, maillage, vitesse, mobile.</p></div>
-      <div class="service-feature"><div class="icon">📝</div><h3>Articles de blog optimisés</h3><p>Rédaction d'articles SEO ciblant les mots-clés de votre secteur. Contenu utile et bien structuré.</p></div>
-      <div class="service-feature"><div class="icon">🗺️</div><h3>Maillage interne</h3><p>Liens internes stratégiques pour guider les visiteurs et booster l'autorité de vos pages.</p></div>
-      <div class="service-feature"><div class="icon">📍</div><h3>SEO local</h3><p>Optimisation de votre fiche Google My Business pour apparaître dans les recherches locales.</p></div>
-      <div class="service-feature"><div class="icon">⚡</div><h3>Core Web Vitals</h3><p>Optimisation des performances techniques : LCP, CLS, FID — les critères de Google.</p></div>
-      <div class="service-feature"><div class="icon">📊</div><h3>Suivi & reporting</h3><p>Google Search Console configurée, suivi mensuel des positions et du trafic organique.</p></div>
-    </div>
-    <div class="service-cta">
-      <div>
-        <h3>Boostez votre visibilité Google</h3>
-        <p>Un audit gratuit de votre site pour commencer — sans engagement.</p>
-      </div>
-      <div class="service-price">
-        <div class="price">300€</div>
-        <div class="price-label">À partir de · TVA non applicable</div>
-      </div>
-      <button class="btn-primary" onclick="showPage('contact')">Demander un audit →</button>
-    </div>
-  </div>
-</div>
-
-<!-- PAGE SERVICE REFONTE -->
-<div id="page-service-refonte" class="page">
-  <div class="service-hero">
-    <img src="exp-refonte.png" alt="Refonte de site">
-    <div class="service-hero-overlay"></div>
-    <div class="service-hero-content">
-      <div class="eyebrow">Service</div>
-      <h1>Refonte de Site</h1>
-      <p>Modernisez votre site existant sans repartir de zéro — nouveau design, meilleures performances, même contenu.</p>
-    </div>
-  </div>
-  <div class="section">
-    <div class="eyebrow">Ce qui est inclus</div>
-    <h2>Votre site, version améliorée</h2>
-    <p>Votre site actuel a du potentiel mais montre son âge ? Je le modernise en profondeur tout en conservant ce qui fonctionne.</p>
-    <div class="service-features">
-      <div class="service-feature"><div class="icon">🔎</div><h3>Audit de l'existant</h3><p>Analyse de votre site actuel : design, performances, SEO, UX. On identifie ce qui coince.</p></div>
-      <div class="service-feature"><div class="icon">🎨</div><h3>Nouveau design</h3><p>Charte graphique modernisée, typographie actualisée, mise en page repensée pour 2025.</p></div>
-      <div class="service-feature"><div class="icon">⚡</div><h3>Performances boostées</h3><p>Temps de chargement réduit, images optimisées, code allégé. Google vous en remerciera.</p></div>
-      <div class="service-feature"><div class="icon">📱</div><h3>Mobile-first</h3><p>Votre nouveau site sera parfait sur tous les appareils, smartphones en tête.</p></div>
-      <div class="service-feature"><div class="icon">🔗</div><h3>Migration de contenu</h3><p>Vos textes, images et pages existants sont intégrés dans la nouvelle version sans perte.</p></div>
-      <div class="service-feature"><div class="icon">🚀</div><h3>Mise en ligne soignée</h3><p>Déploiement sans interruption de service, redirections 301 configurées, SEO préservé.</p></div>
-    </div>
-    <div class="service-cta">
-      <div>
-        <h3>Votre site mérite mieux</h3>
-        <p>Envoyez-moi l'URL de votre site actuel — je vous donne un retour gratuit sous 48h.</p>
-      </div>
-      <div class="service-price">
-        <div class="price">600€</div>
-        <div class="price-label">À partir de · TVA non applicable</div>
-      </div>
-      <button class="btn-primary" onclick="showPage('contact')">Demander un devis →</button>
-    </div>
-  </div>
-</div>
-
-<!-- PAGE SERVICE COMMUNICATION -->
-<div id="page-service-communication" class="page">
-  <div class="service-hero">
-    <img src="exp-communication.png" alt="Communication digitale">
-    <div class="service-hero-overlay"></div>
-    <div class="service-hero-content">
-      <div class="eyebrow">Service</div>
-      <h1>Communication Digitale</h1>
-      <p>Google Ads, réseaux sociaux, fiche Google — je mets votre activité sous les projecteurs.</p>
-    </div>
-  </div>
-  <div class="section">
-    <div class="eyebrow">Ce qui est inclus</div>
-    <h2>Attirez les bons clients, au bon moment</h2>
-    <p>Avoir un beau site ne suffit pas. Il faut aussi le faire connaître. Je m'occupe de votre visibilité en ligne de A à Z.</p>
-    <div class="service-features">
-      <div class="service-feature"><div class="icon">📣</div><h3>Google Ads / SEA</h3><p>Campagnes publicitaires ciblées sur Google. Budget maîtrisé, résultats mesurables.</p></div>
-      <div class="service-feature"><div class="icon">📍</div><h3>Fiche Google My Business</h3><p>Optimisation complète de votre fiche Google — photos, avis, horaires, publications.</p></div>
-      <div class="service-feature"><div class="icon">📸</div><h3>Instagram & Facebook</h3><p>Stratégie de contenu, création de visuels avec Canva, gestion des publications.</p></div>
-      <div class="service-feature"><div class="icon">🎯</div><h3>Publicités sociales</h3><p>Campagnes Meta Ads (Instagram/Facebook) pour toucher votre audience cible.</p></div>
-      <div class="service-feature"><div class="icon">📊</div><h3>Reporting mensuel</h3><p>Tableau de bord clair avec vos KPIs : impressions, clics, conversions, coût par lead.</p></div>
-      <div class="service-feature"><div class="icon">🤝</div><h3>Accompagnement</h3><p>Je vous explique ce que je fais et pourquoi — vous restez maître de votre stratégie.</p></div>
-    </div>
-    <div class="service-cta">
-      <div>
-        <h3>Boostez votre visibilité en ligne</h3>
-        <p>On commence par un audit gratuit de votre présence digitale actuelle.</p>
-      </div>
-      <div class="service-price">
-        <div class="price">200€</div>
-        <div class="price-label">À partir de / mois · TVA non applicable</div>
-      </div>
-      <button class="btn-primary" onclick="showPage('contact')">Demander un audit →</button>
-    </div>
-  </div>
-</div>
-
-<!-- PAGE SERVICE SPORT BUSINESS -->
-<div id="page-service-sport" class="page">
-  <div class="service-hero">
-    <img src="exp-sport.png" alt="Sport Business">
-    <div class="service-hero-overlay"></div>
-    <div class="service-hero-content">
-      <div class="eyebrow">Service</div>
-      <h1>Sport Business</h1>
-      <p>Sites web pour clubs, associations et fédérations sportives — avec une compréhension réelle du monde du sport.</p>
-    </div>
-  </div>
-  <div class="section">
-    <div class="eyebrow">Ce qui est inclus</div>
-    <h2>Le web au service du sport</h2>
-    <p>Formé à l'AMOS Sport Business School, je comprends les enjeux des structures sportives : visibilité, fidélisation des adhérents, vente de billets et merchandising.</p>
-    <div class="service-features">
-      <div class="service-feature"><div class="icon">🏆</div><h3>Site club / association</h3><p>Présentation du club, équipes, calendrier des matchs, résultats, actualités. Tout en un.</p></div>
-      <div class="service-feature"><div class="icon">🎟️</div><h3>Billetterie en ligne</h3><p>Vente de billets et abonnements directement depuis votre site. Simple pour vos supporters.</p></div>
-      <div class="service-feature"><div class="icon">👕</div><h3>Boutique merchandising</h3><p>E-commerce intégré pour vendre maillots, équipements et produits dérivés en ligne.</p></div>
-      <div class="service-feature"><div class="icon">📱</div><h3>Réseaux sociaux sportifs</h3><p>Stratégie Instagram/Facebook adaptée au monde du sport. Contenu engageant pour vos fans.</p></div>
-      <div class="service-feature"><div class="icon">🤝</div><h3>Espace partenaires</h3><p>Mise en avant de vos sponsors et partenaires. Valorisation des contreparties offertes.</p></div>
-      <div class="service-feature"><div class="icon">📊</div><h3>Recrutement & licences</h3><p>Formulaires d'inscription en ligne, téléchargement des licences, gestion des adhésions.</p></div>
-    </div>
-    <div class="service-cta">
-      <div>
-        <h3>Votre club mérite un site à sa hauteur</h3>
-        <p>Clubs, associations, fédérations — devis gratuit adapté à votre structure.</p>
-      </div>
-      <div class="service-price">
-        <div class="price">600€</div>
-        <div class="price-label">À partir de · TVA non applicable</div>
-      </div>
-      <button class="btn-primary" onclick="showPage('contact')">Demander un devis →</button>
-    </div>
-  </div>
-</div>
-
-<!-- PAGE MENTIONS LÉGALES -->
-<div id="page-mentions" class="page">
-  <div class="section">
-    <div class="eyebrow">Légal</div>
-    <h2>Mentions légales</h2>
-    <div style="margin-top:32px;display:flex;flex-direction:column;gap:28px;">
-      <div>
-        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Éditeur du site</h3>
-        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
-          <strong>Alexis Bernard</strong> — Micro-entrepreneur<br>
-          Activité : Création de sites web et services numériques<br>
-          Adresse : Nice, Alpes-Maritimes (06), France<br>
-          Téléphone : 06 28 96 62 59<br>
-          Email : contact@ab-webstudio.fr<br>
-          Numéro SIRET : en cours d'enregistrement<br>
-          TVA non applicable — Article 293 B du CGI
-        </p>
-      </div>
-      <div>
-        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Hébergement</h3>
-        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
-          Ce site est hébergé par <strong>GitHub Pages</strong><br>
-          GitHub, Inc. — 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA<br>
-          Nom de domaine enregistré chez <strong>OVHcloud</strong> — 2 rue Kellermann, 59100 Roubaix, France
-        </p>
-      </div>
-      <div>
-        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Propriété intellectuelle</h3>
-        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
-          L'ensemble du contenu de ce site (textes, images, graphismes, logo) est la propriété exclusive d'Alexis Bernard — AB WebStudio. Toute reproduction, même partielle, est strictement interdite sans autorisation préalable.
-        </p>
-      </div>
-      <div>
-        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Données personnelles</h3>
-        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
-          Les données collectées via le formulaire de contact (nom, email, téléphone) sont utilisées uniquement pour répondre à vos demandes. Elles ne sont jamais transmises à des tiers. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données en contactant : contact@ab-webstudio.fr
-        </p>
-      </div>
-      <div>
-        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Cookies</h3>
-        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
-          Ce site n'utilise pas de cookies de traçage ou publicitaires. Seuls des cookies techniques nécessaires au bon fonctionnement du site peuvent être déposés.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- PAGE CGV -->
-<div id="page-cgv" class="page">
-  <div class="section">
-    <div class="eyebrow">Légal</div>
-    <h2>Conditions Générales de Vente</h2>
-    <p style="color:var(--muted);font-size:13px;margin-bottom:32px;">En vigueur au 1er janvier 2026</p>
-    <div style="display:flex;flex-direction:column;gap:28px;">
-      <div>
-        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Article 1 — Objet</h3>
-        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
-          Les présentes CGV régissent les relations contractuelles entre Alexis Bernard (AB WebStudio, micro-entrepreneur basé à Nice) et tout client souhaitant bénéficier de ses services de création de sites web et services numériques associés.
-        </p>
-      </div>
-      <div>
-        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Article 2 — Devis & commande</h3>
-        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
-          Tout projet fait l'objet d'un devis gratuit et détaillé. La commande est ferme à réception du devis signé et du versement d'un acompte de 30% du montant total. Le cahier des charges est établi conjointement avant tout démarrage.
-        </p>
-      </div>
-      <div>
-        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Article 3 — Tarifs</h3>
-        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
-          Les prix sont exprimés en euros HT. TVA non applicable en vertu de l'article 293 B du CGI (micro-entrepreneur). Les tarifs peuvent évoluer ; le prix applicable est celui du devis signé.
-        </p>
-      </div>
-      <div>
-        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Article 4 — Délais de livraison</h3>
-        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
-          Les délais indicatifs sont précisés dans chaque devis (généralement 2 à 4 semaines pour un site vitrine). Ces délais démarrent à réception de l'acompte et des éléments nécessaires (textes, logos, photos) fournis par le client.
-        </p>
-      </div>
-      <div>
-        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Article 5 — Modalités de paiement</h3>
-        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
-          30% à la commande, 70% à la livraison. Paiement par virement bancaire ou autre moyen convenu. En cas de retard de paiement, des pénalités de 3 fois le taux légal s'appliquent de plein droit.
-        </p>
-      </div>
-      <div>
-        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Article 6 — Propriété & droits d'auteur</h3>
-        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
-          AB WebStudio cède au client l'intégralité des droits d'exploitation sur le site livré après règlement complet de la facture. AB WebStudio se réserve le droit de mentionner la réalisation dans son portfolio.
-        </p>
-      </div>
-      <div>
-        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Article 7 — Révisions & modifications</h3>
-        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
-          Un cycle de corrections est inclus dans chaque prestation. Les modifications substantielles en cours de projet ou au-delà du cycle inclus feront l'objet d'un devis complémentaire.
-        </p>
-      </div>
-      <div>
-        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Article 8 — Responsabilité</h3>
-        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
-          AB WebStudio s'engage à mettre en œuvre tous les moyens nécessaires à la bonne réalisation des prestations. La responsabilité d'AB WebStudio ne saurait être engagée en cas d'interruption du service d'hébergement ou de perte de données indépendante de sa volonté.
-        </p>
-      </div>
-      <div>
-        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Article 9 — Droit applicable</h3>
-        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
-          Les présentes CGV sont soumises au droit français. En cas de litige, une solution amiable sera privilégiée. À défaut, les tribunaux de Nice seront compétents.
-        </p>
-      </div>
-      <div>
-        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Contact</h3>
-        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
-          AB WebStudio — Alexis Bernard<br>
-          Nice (06), France<br>
-          contact@ab-webstudio.fr · 06 28 96 62 59
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- ARTICLE 1 : SEO ERREURS -->
 <div id="page-article-seo-erreurs" class="page">
@@ -1934,6 +1492,449 @@ footer{background:#050F08;padding:0;}
       <h3>Vous voulez une fiche Google parfaitement optimisée ?</h3>
       <p>Je configure et optimise votre Google Business Profile de A à Z — en une session.</p>
       <button class="btn-primary" onclick="showPage('contact')" style="margin-top:4px;">Optimiser ma fiche Google →</button>
+    </div>
+  </div>
+</div>
+
+<div class="ticker-outer">
+  <div class="ticker-badge"><span>AB WebStudio</span></div>
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <div class="ticker-item">✔️ Devis gratuit sous 48h</div><div class="ticker-sep">·</div>
+      <div class="ticker-item">✔️ Cahier des charges inclus</div><div class="ticker-sep">·</div>
+      <div class="ticker-item">✔️ Réunion de lancement offerte</div><div class="ticker-sep">·</div>
+      <div class="ticker-item">✔️ Corrections incluses</div><div class="ticker-sep">·</div>
+      <div class="ticker-item">✔️ Support après livraison</div><div class="ticker-sep">·</div>
+      <div class="ticker-item">✔️ Livraison en 2 à 4 semaines</div><div class="ticker-sep">·</div>
+      <div class="ticker-item">✔️ -40% vs agences classiques</div><div class="ticker-sep">·</div>
+      <div class="ticker-item">✔️ 100% clients satisfaits</div><div class="ticker-sep">·</div>
+      <div class="ticker-item">✔️ Devis gratuit sous 48h</div><div class="ticker-sep">·</div>
+      <div class="ticker-item">✔️ Cahier des charges inclus</div><div class="ticker-sep">·</div>
+      <div class="ticker-item">✔️ Réunion de lancement offerte</div><div class="ticker-sep">·</div>
+      <div class="ticker-item">✔️ Corrections incluses</div><div class="ticker-sep">·</div>
+      <div class="ticker-item">✔️ Support après livraison</div><div class="ticker-sep">·</div>
+      <div class="ticker-item">✔️ Livraison en 2 à 4 semaines</div><div class="ticker-sep">·</div>
+      <div class="ticker-item">✔️ -40% vs agences classiques</div><div class="ticker-sep">·</div>
+      <div class="ticker-item">✔️ 100% clients satisfaits</div><div class="ticker-sep">·</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="logo-dark.png" alt="AB WebStudio" style="height:52px;width:52px;object-fit:contain;">
+      <p>Création de sites web modernes, rapides et bien référencés. Basé à Nice, actif partout en France.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><button onclick="showPage('accueil')">Accueil</button></li>
+        <li><button onclick="showPage('qui')">Qui suis-je</button></li>
+        <li><button onclick="showPage('realisations')">Réalisations</button></li>
+        <li><button onclick="showPage('processus')">Processus</button></li>
+        <li><button onclick="showPage('blog')">Blog</button></li>
+        <li><button onclick="showPage('localiser')">Localiser</button></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><button onclick="showPage('service-vitrine')">Site vitrine</button></li>
+        <li><button onclick="showPage('service-ecommerce')">E-commerce</button></li>
+        <li><button onclick="showPage('service-seo')">SEO & Blog</button></li>
+        <li><button onclick="showPage('service-refonte')">Refonte de site</button></li>
+        <li><button onclick="showPage('service-com')">Communication digitale</button></li>
+        <li><button onclick="showPage('service-sport')">Sport Business</button></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:contact@ab-webstudio.fr">contact@ab-webstudio.fr</a></li>
+        <li><a href="tel:+33628966259">06 28 96 62 59</a></li>
+        <li><button onclick="showPage('contact')">Devis gratuit</button></li>
+        <li><button onclick="showPage('localiser')">Nice & Côte d'Azur</button></li>
+      </ul>
+    </div>
+  </div>
+  <div style="border-top:1px solid rgba(255,255,255,.07);">
+    <div class="footer-bottom">
+      <p>© 2026 AB WebStudio — Micro-entreprise · Alexis Bernard · Nice</p>
+      <div class="footer-bottom-links">
+        <a href="#" onclick="showPage('mentions');return false;">Mentions légales</a>
+        <a href="#" onclick="showPage('cgv');return false;">CGV</a>
+        <a href="mailto:contact@ab-webstudio.fr">contact@ab-webstudio.fr</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- CHATBOT -->
+<button id="chat-btn" onclick="toggleChat()">
+  <i class="ti ti-message-chatbot" id="chat-icon"></i>
+  <div class="chat-notif" id="chat-notif">1</div>
+</button>
+<div id="chat-window">
+  <div class="chat-header">
+    <div class="chat-avatar">🤖</div>
+    <div class="chat-header-info"><h4>Assistant AB WebStudio</h4><div class="chat-online"><div class="chat-online-dot"></div> En ligne · Alexis répond sous 48h</div></div>
+    <button id="chat-close" onclick="toggleChat()">×</button>
+  </div>
+  <div class="chat-messages" id="chat-messages">
+    <div class="msg bot">👋 Bonjour ! Je suis l'assistant AB WebStudio.<br><br>Posez-moi vos questions sur nos services, tarifs ou délais !<div class="msg-time">maintenant</div></div>
+  </div>
+  <div class="chat-typing" id="chat-typing"><span></span><span></span><span></span></div>
+  <div class="chat-suggestions" id="chat-suggestions">
+    <button class="sugg-btn" onclick="sendSugg(this)">💰 Quels sont les tarifs ?</button>
+    <button class="sugg-btn" onclick="sendSugg(this)">⏱ Quel délai de livraison ?</button>
+    <button class="sugg-btn" onclick="sendSugg(this)">🛒 Vous faites du Shopify ?</button>
+    <button class="sugg-btn" onclick="sendSugg(this)">📍 Vous êtes basé où ?</button>
+  </div>
+  <div class="chat-input-row">
+    <textarea id="chat-input" placeholder="Posez votre question..." rows="1" onkeydown="handleKey(event)"></textarea>
+    <button id="chat-send" onclick="sendMessage()"><i class="ti ti-send"></i></button>
+  </div>
+</div>
+<!-- PAGE SERVICE VITRINE -->
+<div id="page-service-vitrine" class="page">
+  <div class="service-hero">
+    <img src="exp-vitrine.png" alt="Site vitrine">
+    <div class="service-hero-overlay"></div>
+    <div class="service-hero-content">
+      <div class="eyebrow">Service</div>
+      <h1>Site Vitrine</h1>
+      <p>Votre présence en ligne professionnelle, mobile-first et optimisée SEO — livrée en 2 à 4 semaines.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="eyebrow">Ce qui est inclus</div>
+    <h2>Un site vitrine clé en main</h2>
+    <p>De la maquette à la mise en ligne, je gère tout. Vous n'avez qu'à valider.</p>
+    <div class="service-features">
+      <div class="service-feature"><div class="icon">🎨</div><h3>Design sur-mesure</h3><p>Charte graphique personnalisée, typographie choisie, identité visuelle cohérente avec votre activité.</p></div>
+      <div class="service-feature"><div class="icon">📱</div><h3>100% responsive</h3><p>Votre site s'adapte parfaitement à tous les écrans — mobile, tablette et desktop.</p></div>
+      <div class="service-feature"><div class="icon">🔍</div><h3>SEO intégré</h3><p>Balises optimisées, vitesse de chargement, structure pensée pour Google dès le départ.</p></div>
+      <div class="service-feature"><div class="icon">📄</div><h3>Pages incluses</h3><p>Accueil, À propos, Services, Contact, Blog — tout ce dont vous avez besoin pour démarrer.</p></div>
+      <div class="service-feature"><div class="icon">🌐</div><h3>Nom de domaine & hébergement</h3><p>Je gère l'achat du domaine et la configuration de l'hébergement sur GitHub Pages ou OVH.</p></div>
+      <div class="service-feature"><div class="icon">🛠️</div><h3>Support après livraison</h3><p>Je reste disponible après la mise en ligne pour toute question, correction ou évolution.</p></div>
+    </div>
+    <div class="service-cta">
+      <div>
+        <h3>Prêt à lancer votre site vitrine ?</h3>
+        <p>Devis gratuit sous 48h — sans engagement. Réponse garantie.</p>
+      </div>
+      <div class="service-price">
+        <div class="price">500€</div>
+        <div class="price-label">À partir de · TVA non applicable</div>
+      </div>
+      <button class="btn-primary" onclick="showPage('contact')">Demander un devis →</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE SERVICE ECOMMERCE -->
+<div id="page-service-ecommerce" class="page">
+  <div class="service-hero">
+    <img src="exp-ecommerce.png" alt="E-commerce">
+    <div class="service-hero-overlay"></div>
+    <div class="service-hero-content">
+      <div class="eyebrow">Service</div>
+      <h1>E-Commerce</h1>
+      <p>Boutiques Shopify, PrestaShop ou WooCommerce clés en main — catalogue, paiement, gestion des stocks.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="eyebrow">Ce qui est inclus</div>
+    <h2>Votre boutique en ligne prête à vendre</h2>
+    <p>Une boutique e-commerce complète, configurée et optimisée pour convertir vos visiteurs en clients.</p>
+    <div class="service-features">
+      <div class="service-feature"><div class="icon">🛒</div><h3>Catalogue produits</h3><p>Intégration de vos produits, descriptions, photos, variantes et prix. Gestion simplifiée.</p></div>
+      <div class="service-feature"><div class="icon">💳</div><h3>Paiement sécurisé</h3><p>Intégration Stripe, PayPal et autres moyens de paiement. SSL inclus.</p></div>
+      <div class="service-feature"><div class="icon">📦</div><h3>Gestion des stocks</h3><p>Suivi des stocks en temps réel, alertes de rupture, gestion des commandes.</p></div>
+      <div class="service-feature"><div class="icon">🚚</div><h3>Livraison & frais de port</h3><p>Configuration des zones de livraison, transporteurs et calcul automatique des frais.</p></div>
+      <div class="service-feature"><div class="icon">📈</div><h3>SEO e-commerce</h3><p>Fiches produits optimisées, URLs propres, balises structurées pour Google Shopping.</p></div>
+      <div class="service-feature"><div class="icon">📊</div><h3>Analytics & suivi</h3><p>Google Analytics, suivi des conversions, tableau de bord des ventes.</p></div>
+    </div>
+    <div class="service-cta">
+      <div>
+        <h3>Lancez votre boutique en ligne</h3>
+        <p>Shopify, PrestaShop ou WooCommerce — on choisit ensemble la meilleure solution pour vous.</p>
+      </div>
+      <div class="service-price">
+        <div class="price">800€</div>
+        <div class="price-label">À partir de · TVA non applicable</div>
+      </div>
+      <button class="btn-primary" onclick="showPage('contact')">Demander un devis →</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE SERVICE SEO -->
+<div id="page-service-seo" class="page">
+  <div class="service-hero">
+    <img src="exp-seo.png" alt="SEO & Blog">
+    <div class="service-hero-overlay"></div>
+    <div class="service-hero-content">
+      <div class="eyebrow">Service</div>
+      <h1>SEO & Blog</h1>
+      <p>Remontez dans les résultats Google grâce à une stratégie de contenu optimisée et durable.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="eyebrow">Ce qui est inclus</div>
+    <h2>Visible sur Google, durablement</h2>
+    <p>Le SEO n'est pas de la magie — c'est de la méthode. Je mets en place les bases techniques et éditoriales pour que Google vous trouve.</p>
+    <div class="service-features">
+      <div class="service-feature"><div class="icon">🔍</div><h3>Audit SEO</h3><p>Analyse complète de votre site existant : performances, balises, maillage, vitesse, mobile.</p></div>
+      <div class="service-feature"><div class="icon">📝</div><h3>Articles de blog optimisés</h3><p>Rédaction d'articles SEO ciblant les mots-clés de votre secteur. Contenu utile et bien structuré.</p></div>
+      <div class="service-feature"><div class="icon">🗺️</div><h3>Maillage interne</h3><p>Liens internes stratégiques pour guider les visiteurs et booster l'autorité de vos pages.</p></div>
+      <div class="service-feature"><div class="icon">📍</div><h3>SEO local</h3><p>Optimisation de votre fiche Google My Business pour apparaître dans les recherches locales.</p></div>
+      <div class="service-feature"><div class="icon">⚡</div><h3>Core Web Vitals</h3><p>Optimisation des performances techniques : LCP, CLS, FID — les critères de Google.</p></div>
+      <div class="service-feature"><div class="icon">📊</div><h3>Suivi & reporting</h3><p>Google Search Console configurée, suivi mensuel des positions et du trafic organique.</p></div>
+    </div>
+    <div class="service-cta">
+      <div>
+        <h3>Boostez votre visibilité Google</h3>
+        <p>Un audit gratuit de votre site pour commencer — sans engagement.</p>
+      </div>
+      <div class="service-price">
+        <div class="price">300€</div>
+        <div class="price-label">À partir de · TVA non applicable</div>
+      </div>
+      <button class="btn-primary" onclick="showPage('contact')">Demander un audit →</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE SERVICE REFONTE -->
+<div id="page-service-refonte" class="page">
+  <div class="service-hero">
+    <img src="exp-refonte.png" alt="Refonte de site">
+    <div class="service-hero-overlay"></div>
+    <div class="service-hero-content">
+      <div class="eyebrow">Service</div>
+      <h1>Refonte de Site</h1>
+      <p>Modernisez votre site existant sans repartir de zéro — nouveau design, meilleures performances, même contenu.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="eyebrow">Ce qui est inclus</div>
+    <h2>Votre site, version améliorée</h2>
+    <p>Votre site actuel a du potentiel mais montre son âge ? Je le modernise en profondeur tout en conservant ce qui fonctionne.</p>
+    <div class="service-features">
+      <div class="service-feature"><div class="icon">🔎</div><h3>Audit de l'existant</h3><p>Analyse de votre site actuel : design, performances, SEO, UX. On identifie ce qui coince.</p></div>
+      <div class="service-feature"><div class="icon">🎨</div><h3>Nouveau design</h3><p>Charte graphique modernisée, typographie actualisée, mise en page repensée pour 2025.</p></div>
+      <div class="service-feature"><div class="icon">⚡</div><h3>Performances boostées</h3><p>Temps de chargement réduit, images optimisées, code allégé. Google vous en remerciera.</p></div>
+      <div class="service-feature"><div class="icon">📱</div><h3>Mobile-first</h3><p>Votre nouveau site sera parfait sur tous les appareils, smartphones en tête.</p></div>
+      <div class="service-feature"><div class="icon">🔗</div><h3>Migration de contenu</h3><p>Vos textes, images et pages existants sont intégrés dans la nouvelle version sans perte.</p></div>
+      <div class="service-feature"><div class="icon">🚀</div><h3>Mise en ligne soignée</h3><p>Déploiement sans interruption de service, redirections 301 configurées, SEO préservé.</p></div>
+    </div>
+    <div class="service-cta">
+      <div>
+        <h3>Votre site mérite mieux</h3>
+        <p>Envoyez-moi l'URL de votre site actuel — je vous donne un retour gratuit sous 48h.</p>
+      </div>
+      <div class="service-price">
+        <div class="price">600€</div>
+        <div class="price-label">À partir de · TVA non applicable</div>
+      </div>
+      <button class="btn-primary" onclick="showPage('contact')">Demander un devis →</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE SERVICE COMMUNICATION -->
+<div id="page-service-communication" class="page">
+  <div class="service-hero">
+    <img src="exp-communication.png" alt="Communication digitale">
+    <div class="service-hero-overlay"></div>
+    <div class="service-hero-content">
+      <div class="eyebrow">Service</div>
+      <h1>Communication Digitale</h1>
+      <p>Google Ads, réseaux sociaux, fiche Google — je mets votre activité sous les projecteurs.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="eyebrow">Ce qui est inclus</div>
+    <h2>Attirez les bons clients, au bon moment</h2>
+    <p>Avoir un beau site ne suffit pas. Il faut aussi le faire connaître. Je m'occupe de votre visibilité en ligne de A à Z.</p>
+    <div class="service-features">
+      <div class="service-feature"><div class="icon">📣</div><h3>Google Ads / SEA</h3><p>Campagnes publicitaires ciblées sur Google. Budget maîtrisé, résultats mesurables.</p></div>
+      <div class="service-feature"><div class="icon">📍</div><h3>Fiche Google My Business</h3><p>Optimisation complète de votre fiche Google — photos, avis, horaires, publications.</p></div>
+      <div class="service-feature"><div class="icon">📸</div><h3>Instagram & Facebook</h3><p>Stratégie de contenu, création de visuels avec Canva, gestion des publications.</p></div>
+      <div class="service-feature"><div class="icon">🎯</div><h3>Publicités sociales</h3><p>Campagnes Meta Ads (Instagram/Facebook) pour toucher votre audience cible.</p></div>
+      <div class="service-feature"><div class="icon">📊</div><h3>Reporting mensuel</h3><p>Tableau de bord clair avec vos KPIs : impressions, clics, conversions, coût par lead.</p></div>
+      <div class="service-feature"><div class="icon">🤝</div><h3>Accompagnement</h3><p>Je vous explique ce que je fais et pourquoi — vous restez maître de votre stratégie.</p></div>
+    </div>
+    <div class="service-cta">
+      <div>
+        <h3>Boostez votre visibilité en ligne</h3>
+        <p>On commence par un audit gratuit de votre présence digitale actuelle.</p>
+      </div>
+      <div class="service-price">
+        <div class="price">200€</div>
+        <div class="price-label">À partir de / mois · TVA non applicable</div>
+      </div>
+      <button class="btn-primary" onclick="showPage('contact')">Demander un audit →</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE SERVICE SPORT BUSINESS -->
+<div id="page-service-sport" class="page">
+  <div class="service-hero">
+    <img src="exp-sport.png" alt="Sport Business">
+    <div class="service-hero-overlay"></div>
+    <div class="service-hero-content">
+      <div class="eyebrow">Service</div>
+      <h1>Sport Business</h1>
+      <p>Sites web pour clubs, associations et fédérations sportives — avec une compréhension réelle du monde du sport.</p>
+    </div>
+  </div>
+  <div class="section">
+    <div class="eyebrow">Ce qui est inclus</div>
+    <h2>Le web au service du sport</h2>
+    <p>Formé à l'AMOS Sport Business School, je comprends les enjeux des structures sportives : visibilité, fidélisation des adhérents, vente de billets et merchandising.</p>
+    <div class="service-features">
+      <div class="service-feature"><div class="icon">🏆</div><h3>Site club / association</h3><p>Présentation du club, équipes, calendrier des matchs, résultats, actualités. Tout en un.</p></div>
+      <div class="service-feature"><div class="icon">🎟️</div><h3>Billetterie en ligne</h3><p>Vente de billets et abonnements directement depuis votre site. Simple pour vos supporters.</p></div>
+      <div class="service-feature"><div class="icon">👕</div><h3>Boutique merchandising</h3><p>E-commerce intégré pour vendre maillots, équipements et produits dérivés en ligne.</p></div>
+      <div class="service-feature"><div class="icon">📱</div><h3>Réseaux sociaux sportifs</h3><p>Stratégie Instagram/Facebook adaptée au monde du sport. Contenu engageant pour vos fans.</p></div>
+      <div class="service-feature"><div class="icon">🤝</div><h3>Espace partenaires</h3><p>Mise en avant de vos sponsors et partenaires. Valorisation des contreparties offertes.</p></div>
+      <div class="service-feature"><div class="icon">📊</div><h3>Recrutement & licences</h3><p>Formulaires d'inscription en ligne, téléchargement des licences, gestion des adhésions.</p></div>
+    </div>
+    <div class="service-cta">
+      <div>
+        <h3>Votre club mérite un site à sa hauteur</h3>
+        <p>Clubs, associations, fédérations — devis gratuit adapté à votre structure.</p>
+      </div>
+      <div class="service-price">
+        <div class="price">600€</div>
+        <div class="price-label">À partir de · TVA non applicable</div>
+      </div>
+      <button class="btn-primary" onclick="showPage('contact')">Demander un devis →</button>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE MENTIONS LÉGALES -->
+<div id="page-mentions" class="page">
+  <div class="section">
+    <div class="eyebrow">Légal</div>
+    <h2>Mentions légales</h2>
+    <div style="margin-top:32px;display:flex;flex-direction:column;gap:28px;">
+      <div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Éditeur du site</h3>
+        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
+          <strong>Alexis Bernard</strong> — Micro-entrepreneur<br>
+          Activité : Création de sites web et services numériques<br>
+          Adresse : Nice, Alpes-Maritimes (06), France<br>
+          Téléphone : 06 28 96 62 59<br>
+          Email : contact@ab-webstudio.fr<br>
+          Numéro SIRET : en cours d'enregistrement<br>
+          TVA non applicable — Article 293 B du CGI
+        </p>
+      </div>
+      <div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Hébergement</h3>
+        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
+          Ce site est hébergé par <strong>GitHub Pages</strong><br>
+          GitHub, Inc. — 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA<br>
+          Nom de domaine enregistré chez <strong>OVHcloud</strong> — 2 rue Kellermann, 59100 Roubaix, France
+        </p>
+      </div>
+      <div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Propriété intellectuelle</h3>
+        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
+          L'ensemble du contenu de ce site (textes, images, graphismes, logo) est la propriété exclusive d'Alexis Bernard — AB WebStudio. Toute reproduction, même partielle, est strictement interdite sans autorisation préalable.
+        </p>
+      </div>
+      <div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Données personnelles</h3>
+        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
+          Les données collectées via le formulaire de contact (nom, email, téléphone) sont utilisées uniquement pour répondre à vos demandes. Elles ne sont jamais transmises à des tiers. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données en contactant : contact@ab-webstudio.fr
+        </p>
+      </div>
+      <div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Cookies</h3>
+        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
+          Ce site n'utilise pas de cookies de traçage ou publicitaires. Seuls des cookies techniques nécessaires au bon fonctionnement du site peuvent être déposés.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PAGE CGV -->
+<div id="page-cgv" class="page">
+  <div class="section">
+    <div class="eyebrow">Légal</div>
+    <h2>Conditions Générales de Vente</h2>
+    <p style="color:var(--muted);font-size:13px;margin-bottom:32px;">En vigueur au 1er janvier 2026</p>
+    <div style="display:flex;flex-direction:column;gap:28px;">
+      <div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Article 1 — Objet</h3>
+        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
+          Les présentes CGV régissent les relations contractuelles entre Alexis Bernard (AB WebStudio, micro-entrepreneur basé à Nice) et tout client souhaitant bénéficier de ses services de création de sites web et services numériques associés.
+        </p>
+      </div>
+      <div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Article 2 — Devis & commande</h3>
+        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
+          Tout projet fait l'objet d'un devis gratuit et détaillé. La commande est ferme à réception du devis signé et du versement d'un acompte de 30% du montant total. Le cahier des charges est établi conjointement avant tout démarrage.
+        </p>
+      </div>
+      <div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Article 3 — Tarifs</h3>
+        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
+          Les prix sont exprimés en euros HT. TVA non applicable en vertu de l'article 293 B du CGI (micro-entrepreneur). Les tarifs peuvent évoluer ; le prix applicable est celui du devis signé.
+        </p>
+      </div>
+      <div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Article 4 — Délais de livraison</h3>
+        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
+          Les délais indicatifs sont précisés dans chaque devis (généralement 2 à 4 semaines pour un site vitrine). Ces délais démarrent à réception de l'acompte et des éléments nécessaires (textes, logos, photos) fournis par le client.
+        </p>
+      </div>
+      <div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Article 5 — Modalités de paiement</h3>
+        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
+          30% à la commande, 70% à la livraison. Paiement par virement bancaire ou autre moyen convenu. En cas de retard de paiement, des pénalités de 3 fois le taux légal s'appliquent de plein droit.
+        </p>
+      </div>
+      <div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Article 6 — Propriété & droits d'auteur</h3>
+        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
+          AB WebStudio cède au client l'intégralité des droits d'exploitation sur le site livré après règlement complet de la facture. AB WebStudio se réserve le droit de mentionner la réalisation dans son portfolio.
+        </p>
+      </div>
+      <div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Article 7 — Révisions & modifications</h3>
+        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
+          Un cycle de corrections est inclus dans chaque prestation. Les modifications substantielles en cours de projet ou au-delà du cycle inclus feront l'objet d'un devis complémentaire.
+        </p>
+      </div>
+      <div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Article 8 — Responsabilité</h3>
+        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
+          AB WebStudio s'engage à mettre en œuvre tous les moyens nécessaires à la bonne réalisation des prestations. La responsabilité d'AB WebStudio ne saurait être engagée en cas d'interruption du service d'hébergement ou de perte de données indépendante de sa volonté.
+        </p>
+      </div>
+      <div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Article 9 — Droit applicable</h3>
+        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
+          Les présentes CGV sont soumises au droit français. En cas de litige, une solution amiable sera privilégiée. À défaut, les tribunaux de Nice seront compétents.
+        </p>
+      </div>
+      <div>
+        <h3 style="font-size:16px;font-weight:700;color:var(--ink);margin-bottom:10px;">Contact</h3>
+        <p style="font-size:14px;color:var(--muted);line-height:1.8;">
+          AB WebStudio — Alexis Bernard<br>
+          Nice (06), France<br>
+          contact@ab-webstudio.fr · 06 28 96 62 59
+        </p>
+      </div>
     </div>
   </div>
 </div>
