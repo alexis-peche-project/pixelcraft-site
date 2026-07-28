@@ -4504,68 +4504,36 @@ footer{background:#050F08;padding:0;}
 </div>
 
 
-<script>
-// SLIDER
-let cur=0;
-const slides=document.querySelectorAll('.slide');
-const dots=document.querySelectorAll('.dot');
-let timer;
-function goSlide(n){slides[cur].classList.remove('active');dots[cur].classList.remove('active');cur=n;slides[cur].classList.add('active');dots[cur].classList.add('active');}
-function startAuto(){timer=setInterval(()=>goSlide((cur+1)%slides.length),5000);}
-dots.forEach((d,i)=>d.addEventListener('click',()=>{clearInterval(timer);goSlide(i);startAuto();}));
-startAuto();
+<!-- CHATBOT -->
+<button id="chat-btn" onclick="toggleChat()">
+  <i class="ti ti-message-chatbot" id="chat-icon"></i>
+  <div class="chat-notif" id="chat-notif">1</div>
+</button>
 
-// NAVIGATION
-function showPage(id){
-  closeMenu();
-  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
-  document.getElementById('page-'+id).classList.add('active');
-  document.querySelectorAll('.nav-links button').forEach(b=>b.classList.remove('active'));
-  const btn=document.getElementById('btn-'+id);
-  if(btn)btn.classList.add('active');
-  window.scrollTo(0,0);
-}
-
-// BURGER
-function toggleMenu(){document.getElementById('burger').classList.toggle('open');document.getElementById('nav-links').classList.toggle('open');document.getElementById('nav-overlay').classList.toggle('open');}
-function closeMenu(){document.getElementById('burger').classList.remove('open');document.getElementById('nav-links').classList.remove('open');document.getElementById('nav-overlay').classList.remove('open');}
-
-// FAQ
-function toggleFaq(btn){const item=btn.parentElement;const isOpen=item.classList.contains('open');document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));if(!isOpen)item.classList.add('open');}
-
-// CHATBOT
-let chatOpen=false,history=[];
-const SYS=`Tu es l'assistant commercial de AB WebStudio, micro-entreprise de création de sites web d'Alexis Bernard, basé à Nice.
-Ton rôle est de qualifier les projets des prospects en posant des questions précises, une par une, dans cet ordre :
-1. Quel type de site souhaitez-vous ? (vitrine, e-commerce, refonte, blog)
-2. Vous avez déjà un site existant ?
-3. Quel est votre secteur d'activité ?
-4. Quel est votre budget approximatif ? (moins de 500€ / 500-1000€ / 1000-2000€ / plus de 2000€)
-5. Quel est votre délai souhaité ?
-6. Comment vous appelle-t-on et quel est votre email pour qu'Alexis vous recontacte ?
-Règles : pose UNE seule question à la fois. Ton professionnel et sérieux. Quand tu as toutes les infos, fais un récapitulatif et termine par ##LEAD_COMPLET## {"nom":"...","email":"...","type_site":"...","secteur":"...","budget":"...","delai":"..."}. Tarifs : à partir de 500€, 20-40% moins cher qu'une agence. Réponds en français, max 4 phrases.`;
-
-function toggleChat(){chatOpen=!chatOpen;document.getElementById('chat-window').classList.toggle('open',chatOpen);document.getElementById('chat-icon').className=chatOpen?'ti ti-x':'ti ti-message-chatbot';if(chatOpen)document.getElementById('chat-notif').style.display='none';}
-function addMsg(text,role){const msgs=document.getElementById('chat-messages');const d=document.createElement('div');d.className='msg '+role;d.innerHTML=text+'<div class="msg-time">maintenant</div>';msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;}
-function showTyping(v){document.getElementById('chat-typing').style.display=v?'flex':'none';if(v)document.getElementById('chat-messages').scrollTop=9999;}
-async function callClaude(msg){
-  history.push({role:'user',content:msg});
-  showTyping(true);
-  document.getElementById('chat-suggestions').style.display='none';
-  try{
-    const r=await fetch('https://zekwogfrcrvbfnmipyou.supabase.co/functions/v1/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({messages:history})});
-    const d=await r.json();
-    const reply=d.content?.[0]?.text||'Contactez-nous à contact@ab-webstudio.fr !';
-    history.push({role:'assistant',content:reply});
-    showTyping(false);
-    const display=reply.replace(/##LEAD_COMPLET##.*$/s,'').trim();
-    addMsg(display||'Merci ! Alexis vous recontactera sous 48h. 📧','bot');
-  }catch(e){showTyping(false);addMsg('Une erreur est survenue. Contactez-nous à contact@ab-webstudio.fr 📧','bot');}
-}
-function sendMessage(){const i=document.getElementById('chat-input');const t=i.value.trim();if(!t)return;addMsg(t,'user');i.value='';callClaude(t);}
-function sendSugg(btn){const t=btn.textContent.replace(/^.\s/,'').trim();addMsg(t,'user');callClaude(t);}
-function handleKey(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendMessage();}}
-
+<div id="chat-window">
+  <div class="chat-header">
+    <div class="chat-avatar">🤖</div>
+    <div class="chat-header-info">
+      <h4>Assistant AB WebStudio</h4>
+      <div class="chat-online"><div class="chat-online-dot"></div> En ligne · Alexis répond sous 48h</div>
+    </div>
+    <button id="chat-close" onclick="toggleChat()">×</button>
+  </div>
+  <div class="chat-messages" id="chat-messages">
+    <div class="msg bot">👋 Bonjour ! Je suis l'assistant AB WebStudio.<br><br>Posez-moi vos questions sur nos services, tarifs ou délais !<div class="msg-time">maintenant</div></div>
+  </div>
+  <div class="chat-typing" id="chat-typing"><span></span><span></span><span></span></div>
+  <div class="chat-suggestions" id="chat-suggestions">
+    <button class="sugg-btn" onclick="sendSugg(this)">💰 Quels sont les tarifs ?</button>
+    <button class="sugg-btn" onclick="sendSugg(this)">⏱ Quel délai de livraison ?</button>
+    <button class="sugg-btn" onclick="sendSugg(this)">🛒 Vous faites du Shopify ?</button>
+    <button class="sugg-btn" onclick="sendSugg(this)">📍 Vous êtes basé où ?</button>
+  </div>
+  <div class="chat-input-row">
+    <textarea id="chat-input" placeholder="Posez votre question..." rows="1" onkeydown="handleKey(event)"></textarea>
+    <button id="chat-send" onclick="sendMessage()"><i class="ti ti-send"></i></button>
+  </div>
+</div>
 
 <script>
 
@@ -4631,8 +4599,6 @@ function sendSugg(btn){const t=btn.textContent.replace(/^.\s/,'').trim();addMsg(
 function handleKey(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendMessage();}}
 
 </script>
-</body>
-</html>
-</script>
+
 </body>
 </html>
