@@ -104,6 +104,44 @@ nav{position:sticky;top:0;z-index:200;background:rgba(244,250,246,.97);backdrop-
 .tool-pill:hover{border-color:var(--em);box-shadow:0 2px 12px rgba(0,200,83,.12);}
 .tool-icon-img{width:28px;height:28px;object-fit:contain;border-radius:6px;flex-shrink:0;}
 
+
+/* ARTICLES */
+.article-hero{position:relative;height:420px;overflow:hidden;}
+.article-hero img{width:100%;height:100%;object-fit:cover;}
+.article-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(4,18,10,.95) 0%,rgba(4,18,10,.3) 60%,transparent 100%);}
+.article-header{position:absolute;bottom:0;left:0;right:0;padding:40px 80px;}
+.article-cat{display:inline-block;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--em);background:rgba(0,200,83,.15);border:1px solid rgba(0,200,83,.3);border-radius:20px;padding:4px 12px;margin-bottom:12px;}
+.article-header h1{font-family:var(--display);font-size:42px;color:#fff;line-height:1.15;max-width:700px;margin-bottom:10px;}
+.article-meta{font-size:13px;color:rgba(255,255,255,.5);}
+.article-body{max-width:720px;margin:0 auto;padding:56px 48px;}
+.article-body h2{font-family:var(--display);font-size:28px;color:var(--ink);margin:40px 0 16px;line-height:1.2;}
+.article-body h3{font-size:18px;font-weight:700;color:var(--ink);margin:28px 0 12px;}
+.article-body p{font-size:15px;color:var(--muted);line-height:1.9;margin-bottom:18px;}
+.article-body strong{color:var(--ink);}
+.article-body ul,.article-body ol{padding-left:24px;margin-bottom:18px;}
+.article-body li{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:8px;}
+.article-img{width:100%;border-radius:12px;margin:28px 0;object-fit:cover;height:280px;}
+.article-quote{background:var(--em-xl);border-left:4px solid var(--em);border-radius:0 12px 12px 0;padding:20px 24px;margin:28px 0;}
+.article-quote p{font-size:15px;color:var(--ink-s);font-style:italic;margin:0;line-height:1.7;}
+.article-links{background:var(--bg);border:1.5px solid var(--border);border-radius:14px;padding:24px;margin:36px 0;}
+.article-links h4{font-size:13px;font-weight:700;color:var(--ink);margin-bottom:12px;}
+.article-links ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:8px;}
+.article-links li button{background:none;border:none;color:var(--em-d);font-family:var(--body);font-size:13px;cursor:pointer;padding:0;text-align:left;text-decoration:underline;}
+.article-links li button:hover{color:var(--em);}
+.article-cta{background:linear-gradient(135deg,#071A10,#0D2E1A);border-radius:16px;padding:32px;text-align:center;margin-top:48px;}
+.article-cta h3{font-family:var(--display);font-size:24px;color:#fff;margin-bottom:8px;}
+.article-cta p{font-size:14px;color:rgba(255,255,255,.6);margin-bottom:20px;}
+.back-btn{display:inline-flex;align-items:center;gap:6px;background:none;border:none;color:var(--em-d);font-family:var(--body);font-size:13px;font-weight:600;cursor:pointer;padding:0;margin-bottom:0;}
+.back-btn:hover{color:var(--em);}
+.article-nav-bar{background:var(--bg);border-bottom:1px solid var(--border);padding:14px 48px;display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);}
+@media(max-width:768px){
+  .article-header{padding:24px 20px;}
+  .article-header h1{font-size:28px;}
+  .article-body{padding:36px 20px;}
+  .article-hero{height:300px;}
+  .article-nav-bar{padding:12px 20px;}
+}
+
 /* EXPERTISE CARDS */
 .expertise-section{
   padding:72px 48px;
@@ -711,12 +749,16 @@ footer{background:#050F08;padding:0;}
     <h2>Blog & conseils</h2>
     <p>Des articles concrets pour améliorer votre visibilité et prendre les bonnes décisions.</p>
     <div class="blog-grid">
-      <div class="blog-card"><div class="blog-thumb-img"><img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=400&q=80" alt="SEO"></div><div class="blog-body"><div class="blog-cat">SEO</div><h3>5 erreurs qui tuent votre référencement</h3><div class="blog-meta">Juin 2025 · 4 min</div></div></div>
-      <div class="blog-card"><div class="blog-thumb-img"><img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&q=80" alt="Mobile"></div><div class="blog-body"><div class="blog-cat">Design</div><h3>Pourquoi le mobile-first est non négociable en 2025</h3><div class="blog-meta">Mai 2025 · 3 min</div></div></div>
-      <div class="blog-card"><div class="blog-thumb-img"><img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&q=80" alt="Budget"></div><div class="blog-body"><div class="blog-cat">Budget</div><h3>Combien coûte vraiment un site web ?</h3><div class="blog-meta">Avril 2025 · 5 min</div></div></div>
-      <div class="blog-card"><div class="blog-thumb-emoji" style="background:#fdf4ff;">🔐</div><div class="blog-body"><div class="blog-cat">Hébergement</div><h3>GitHub Pages vs hébergeur classique : lequel choisir ?</h3><div class="blog-meta">Mars 2025 · 4 min</div></div></div>
-      <div class="blog-card"><div class="blog-thumb-emoji" style="background:#f0fdf4;">⚡</div><div class="blog-body"><div class="blog-cat">Performance</div><h3>Core Web Vitals : ce que Google mesure vraiment</h3><div class="blog-meta">Fév. 2025 · 6 min</div></div></div>
-      <div class="blog-card"><div class="blog-thumb-emoji" style="background:#fff1f2;">🏆</div><div class="blog-body"><div class="blog-cat">Sport Business</div><h3>Site web pour club de sport : les erreurs à éviter</h3><div class="blog-meta">Jan. 2025 · 4 min</div></div></div>
+      <div class="blog-card" onclick="showPage('article-seo-erreurs')" style="cursor:pointer;"><div class="blog-thumb-img"><img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=400&q=80" alt="SEO forêt"></div><div class="blog-body"><div class="blog-cat">SEO</div><h3>5 erreurs qui tuent votre référencement (et comment les corriger)</h3><div class="blog-meta">Juin 2026 · 7 min</div></div></div>
+      <div class="blog-card" onclick="showPage('article-mobile-first')" style="cursor:pointer;"><div class="blog-thumb-img"><img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=400&q=80" alt="Nature mobile"></div><div class="blog-body"><div class="blog-cat">Design</div><h3>Pourquoi le mobile-first est non négociable en 2026</h3><div class="blog-meta">Mai 2026 · 6 min</div></div></div>
+      <div class="blog-card" onclick="showPage('article-cout-site')" style="cursor:pointer;"><div class="blog-thumb-img"><img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=400&q=80" alt="Nature budget"></div><div class="blog-body"><div class="blog-cat">Budget</div><h3>Combien coûte vraiment un site web en 2026 ?</h3><div class="blog-meta">Avril 2026 · 8 min</div></div></div>
+      <div class="blog-card" onclick="showPage('article-github-vs-hebergeur')" style="cursor:pointer;"><div class="blog-thumb-img"><img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=400&q=80" alt="Rivière hébergement"></div><div class="blog-body"><div class="blog-cat">Hébergement</div><h3>GitHub Pages vs hébergeur classique : lequel choisir ?</h3><div class="blog-meta">Mars 2026 · 7 min</div></div></div>
+      <div class="blog-card" onclick="showPage('article-core-web-vitals')" style="cursor:pointer;"><div class="blog-thumb-img"><img src="https://images.unsplash.com/photo-1440342359743-84fcb8c21f21?w=400&q=80" alt="Performance nature"></div><div class="blog-body"><div class="blog-cat">Performance</div><h3>Core Web Vitals : ce que Google mesure vraiment sur votre site</h3><div class="blog-meta">Fév. 2026 · 8 min</div></div></div>
+      <div class="blog-card" onclick="showPage('article-sport-web')" style="cursor:pointer;"><div class="blog-thumb-img"><img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=400&q=80" alt="Sport business"></div><div class="blog-body"><div class="blog-cat">Sport Business</div><h3>Site web pour club de sport : les erreurs à éviter absolument</h3><div class="blog-meta">Jan. 2026 · 7 min</div></div></div>
+      <div class="blog-card" onclick="showPage('article-seo-local')" style="cursor:pointer;"><div class="blog-thumb-img"><img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=400&q=80" alt="SEO local"></div><div class="blog-body"><div class="blog-cat">SEO Local</div><h3>SEO local à Nice : comment dominer Google dans votre ville</h3><div class="blog-meta">Déc. 2025 · 8 min</div></div></div>
+      <div class="blog-card" onclick="showPage('article-shopify-vs-prestashop')" style="cursor:pointer;"><div class="blog-thumb-img"><img src="https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=400&q=80" alt="E-commerce nature"></div><div class="blog-body"><div class="blog-cat">E-commerce</div><h3>Shopify vs PrestaShop : quel outil pour votre boutique en ligne ?</h3><div class="blog-meta">Nov. 2025 · 9 min</div></div></div>
+      <div class="blog-card" onclick="showPage('article-vitesse-site')" style="cursor:pointer;"><div class="blog-thumb-img"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="Vitesse"></div><div class="blog-body"><div class="blog-cat">Performance</div><h3>Vitesse de chargement : pourquoi chaque seconde vous coûte des clients</h3><div class="blog-meta">Oct. 2025 · 7 min</div></div></div>
+      <div class="blog-card" onclick="showPage('article-google-my-business')" style="cursor:pointer;"><div class="blog-thumb-img"><img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=400&q=80" alt="Google local nature"></div><div class="blog-body"><div class="blog-cat">Visibilité</div><h3>Google My Business : le guide complet pour dominer les recherches locales</h3><div class="blog-meta">Sept. 2025 · 8 min</div></div></div>
     </div>
   </div>
 </div>
@@ -1279,6 +1321,623 @@ footer{background:#050F08;padding:0;}
   </div>
 </div>
 
+<!-- ARTICLE 1 : SEO ERREURS -->
+<div id="page-article-seo-erreurs" class="page">
+  <div class="article-nav-bar">
+    <button class="back-btn" onclick="showPage('blog')">← Blog</button>
+    <span>·</span><span>SEO</span>
+  </div>
+  <div class="article-hero">
+    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=1400&q=80" alt="Forêt SEO">
+    <div class="article-hero-overlay"></div>
+    <div class="article-header">
+      <div class="article-cat">SEO</div>
+      <h1>5 erreurs qui tuent votre référencement (et comment les corriger)</h1>
+      <div class="article-meta">Alexis Bernard · AB WebStudio · Juin 2026 · 7 min de lecture</div>
+    </div>
+  </div>
+  <div class="article-body">
+    <p>Vous avez un beau site, mais personne ne vous trouve sur Google ? Vous n'êtes pas seul. La majorité des sites que j'audite souffrent des mêmes erreurs fondamentales — et la bonne nouvelle, c'est qu'elles sont toutes corrigibles. Voici les 5 erreurs les plus courantes que je rencontre en tant que <strong>créateur de sites web à Nice</strong>, et comment les éviter.</p>
+
+    <h2>1. Des balises Title et Meta Description mal optimisées</h2>
+    <p>La balise Title est le premier signal que Google lit. Si elle dépasse 60 caractères ou ne contient pas votre mot-clé principal, vous perdez des points précieux. La Meta Description, elle, n'influence pas directement le classement — mais elle détermine si l'internaute va cliquer sur votre lien.</p>
+    <p><strong>À faire :</strong> Chaque page doit avoir une balise Title unique, entre 50 et 60 caractères, avec le mot-clé principal en début de phrase. La Meta Description doit être incitative, entre 150 et 160 caractères.</p>
+
+    <div class="article-quote">
+      <p>"Le SEO, ce n'est pas du vaudou. C'est de la rigueur, de la méthode, et une compréhension fine de ce que cherchent vraiment vos clients."</p>
+    </div>
+
+    <h2>2. Un site trop lent sur mobile</h2>
+    <p>Depuis 2021, Google utilise le Mobile First Indexing : c'est la version mobile de votre site qui détermine votre classement, pas la version desktop. Un site qui charge en plus de 3 secondes perd en moyenne 53% de ses visiteurs avant même qu'ils aient vu votre contenu.</p>
+    <p><strong>À faire :</strong> Compressez vos images (format WebP), limitez les scripts JavaScript inutiles, et utilisez un hébergement performant. Les Core Web Vitals — LCP, CLS, FID — sont désormais des critères de ranking officiels de Google.</p>
+    <img class="article-img" src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80" alt="Performance mobile">
+
+    <h2>3. Un contenu trop mince et sans structure</h2>
+    <p>Google adore le contenu qui répond précisément à une intention de recherche. Un article de 200 mots sur "création site web Nice" ne rivalise pas avec un guide de 1500 mots qui explique vraiment comment fonctionne le processus, les tarifs, les délais et les outils utilisés.</p>
+    <p><strong>À faire :</strong> Structurez vos contenus avec des H1, H2 et H3 cohérents. Utilisez les mots-clés secondaires naturellement. Visez au minimum 800 mots par page importante, et intégrez des liens vers d'autres pages de votre site — c'est le maillage interne.</p>
+
+    <h2>4. Aucun lien interne entre vos pages</h2>
+    <p>Le maillage interne est l'un des leviers SEO les plus sous-estimés. En reliant vos pages entre elles, vous aidez Google à comprendre la structure de votre site et vous distribuez l'autorité SEO de vos pages populaires vers les pages moins visitées.</p>
+    <p><strong>À faire :</strong> Chaque article de blog doit pointer vers au moins 2-3 autres pages de votre site. Chaque page de service doit pointer vers des articles de blog pertinents. C'est un travail continu, pas ponctuel.</p>
+
+    <h2>5. Ignorer Google My Business</h2>
+    <p>Si vous avez une activité locale — ce qui est le cas d'AB WebStudio, basé à Nice — la fiche Google My Business est votre meilleur allié. Elle permet d'apparaître dans les résultats locaux, sur Google Maps, et dans le "Pack Local" (les 3 entreprises affichées en haut des résultats pour une recherche géolocalisée).</p>
+    <p><strong>À faire :</strong> Remplissez tous les champs, ajoutez des photos régulièrement, répondez aux avis, et publiez des posts hebdomadaires. C'est gratuit et terriblement efficace.</p>
+
+    <div class="article-links">
+      <h4>Articles liés — Pour aller plus loin</h4>
+      <ul>
+        <li><button onclick="showPage('article-core-web-vitals')">→ Core Web Vitals : ce que Google mesure vraiment sur votre site</button></li>
+        <li><button onclick="showPage('article-seo-local')">→ SEO local à Nice : comment dominer Google dans votre ville</button></li>
+        <li><button onclick="showPage('article-vitesse-site')">→ Vitesse de chargement : pourquoi chaque seconde vous coûte des clients</button></li>
+        <li><button onclick="showPage('article-google-my-business')">→ Google My Business : le guide complet</button></li>
+      </ul>
+    </div>
+
+    <div class="article-cta">
+      <h3>Votre site souffre de ces erreurs ?</h3>
+      <p>Je propose un audit SEO gratuit de votre site — je vous dis exactement ce qui cloche et comment le corriger.</p>
+      <button class="btn-primary" onclick="showPage('contact')" style="margin-top:4px;">Demander un audit gratuit →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE 2 : MOBILE FIRST -->
+<div id="page-article-mobile-first" class="page">
+  <div class="article-nav-bar">
+    <button class="back-btn" onclick="showPage('blog')">← Blog</button>
+    <span>·</span><span>Design</span>
+  </div>
+  <div class="article-hero">
+    <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1400&q=80" alt="Nature mobile">
+    <div class="article-hero-overlay"></div>
+    <div class="article-header">
+      <div class="article-cat">Design</div>
+      <h1>Pourquoi le mobile-first est non négociable en 2026</h1>
+      <div class="article-meta">Alexis Bernard · AB WebStudio · Mai 2026 · 6 min de lecture</div>
+    </div>
+  </div>
+  <div class="article-body">
+    <p>En 2026, plus de 65% du trafic web mondial est généré depuis un smartphone. Pourtant, des dizaines de sites que j'audite chaque mois sont conçus pour le desktop et "adaptés" pour le mobile — à l'envers. Voici pourquoi cette approche est une erreur fatale, et comment penser mobile-first dès le départ.</p>
+
+    <h2>Qu'est-ce que le Mobile First ?</h2>
+    <p>Le Mobile First, c'est une philosophie de conception qui consiste à <strong>designer d'abord pour les petits écrans</strong>, puis à élargir vers les grands. À l'opposé de l'approche traditionnelle qui consiste à "rétrécir" un design desktop sur mobile.</p>
+    <p>Cette approche n'est pas seulement une bonne pratique UX — c'est une nécessité SEO. Depuis 2021, Google utilise exclusivement l'index mobile pour classer les sites. Si votre version mobile est mauvaise, votre classement en souffre, même sur desktop.</p>
+
+    <img class="article-img" src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80" alt="Forêt design responsive">
+
+    <h2>Les 3 piliers du Mobile First</h2>
+    <h3>1. La lisibilité avant tout</h3>
+    <p>Sur mobile, chaque pixel compte. La police de caractères doit être lisible sans zoom (minimum 16px pour le corps de texte), les boutons doivent être suffisamment grands pour être cliqués avec un doigt (minimum 44x44px), et les espacements doivent respirer.</p>
+
+    <h3>2. La vitesse de chargement</h3>
+    <p>Les connexions mobiles sont souvent plus lentes que le wifi. Un site mobile-first est un site léger : images compressées, scripts minimaux, pas de fontes superflues. Chaque kilooctet compte.</p>
+
+    <h3>3. La navigation simplifiée</h3>
+    <p>Un menu à 12 entrées est impossible à utiliser sur mobile. Sur smartphone, la navigation doit être épurée, le menu burger bien pensé, et les actions principales (appel, devis, contact) accessibles en un clic depuis n'importe quelle page.</p>
+
+    <div class="article-quote">
+      <p>"Concevoir mobile-first, c'est se mettre dans la peau d'un utilisateur pressé, sur un écran de 6 pouces, avec 4G instable. C'est la meilleure contrainte créative qui soit."</p>
+    </div>
+
+    <h2>Comment vérifier si votre site est mobile-friendly ?</h2>
+    <p>Google propose un outil gratuit : le <strong>Test d'optimisation mobile</strong> (search.google.com/test/mobile-friendly). En quelques secondes, vous savez si votre site passe le test. Mais au-delà du test automatique, rien ne remplace de vrais tests sur de vrais appareils.</p>
+
+    <div class="article-links">
+      <h4>Articles liés</h4>
+      <ul>
+        <li><button onclick="showPage('article-core-web-vitals')">→ Core Web Vitals : ce que Google mesure vraiment</button></li>
+        <li><button onclick="showPage('article-vitesse-site')">→ Vitesse de chargement : pourquoi chaque seconde compte</button></li>
+        <li><button onclick="showPage('article-seo-erreurs')">→ 5 erreurs SEO qui plombent votre référencement</button></li>
+      </ul>
+    </div>
+    <div class="article-cta">
+      <h3>Votre site n'est pas mobile-friendly ?</h3>
+      <p>Je le corrige ou je le refais — rapidement, proprement, et à un tarif transparent.</p>
+      <button class="btn-primary" onclick="showPage('contact')" style="margin-top:4px;">Obtenir un devis →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE 3 : COUT SITE WEB -->
+<div id="page-article-cout-site" class="page">
+  <div class="article-nav-bar">
+    <button class="back-btn" onclick="showPage('blog')">← Blog</button>
+    <span>·</span><span>Budget</span>
+  </div>
+  <div class="article-hero">
+    <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=1400&q=80" alt="Nature budget">
+    <div class="article-hero-overlay"></div>
+    <div class="article-header">
+      <div class="article-cat">Budget</div>
+      <h1>Combien coûte vraiment un site web en 2026 ?</h1>
+      <div class="article-meta">Alexis Bernard · AB WebStudio · Avril 2026 · 8 min de lecture</div>
+    </div>
+  </div>
+  <div class="article-body">
+    <p>C'est la question que tout le monde pose — et personne ne répond clairement. "Ça dépend" est la réponse habituelle. Mais ça dépend de quoi, exactement ? En tant que créateur de sites web indépendant basé à Nice, je vais vous donner des chiffres honnêtes et transparents.</p>
+
+    <h2>Les différentes façons de créer un site web</h2>
+    <h3>Option 1 : Les constructeurs no-code (Wix, Squarespace…)</h3>
+    <p>Budget : <strong>0 à 30€/mois</strong>. Ces outils permettent de créer un site sans coder. Le rendu est souvent générique, les performances limitées, et vous dépendez entièrement de la plateforme. Correct pour tester une idée, insuffisant pour une image professionnelle sérieuse.</p>
+
+    <h3>Option 2 : Un freelance junior ou autodidacte</h3>
+    <p>Budget : <strong>300 à 800€</strong>. Résultats très variables. Le prix bas est séduisant mais le suivi post-livraison est souvent inexistant et la qualité imprévisible. À choisir uniquement si vous avez des recommandations sérieuses.</p>
+
+    <h3>Option 3 : Un freelance expérimenté (comme AB WebStudio)</h3>
+    <p>Budget : <strong>500 à 2000€</strong> selon le projet. Vous bénéficiez d'une méthode éprouvée, d'un cahier des charges, d'un suivi rigoureux et d'un interlocuteur unique. C'est le meilleur rapport qualité-prix pour les TPE/PME et indépendants.</p>
+
+    <img class="article-img" src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80" alt="Nature comparatif">
+
+    <h3>Option 4 : Une agence web</h3>
+    <p>Budget : <strong>3000 à 15 000€</strong> et plus. Vous payez les charges de structure : loyer, salaires, management. La qualité est au rendez-vous, mais pour une petite structure, c'est souvent disproportionné.</p>
+
+    <h2>Ce qui fait varier le prix d'un site vitrine</h2>
+    <ul>
+      <li><strong>Le nombre de pages</strong> : un site 5 pages n'est pas comparable à un site 20 pages.</li>
+      <li><strong>Le design</strong> : template personnalisé ou création from scratch ?</li>
+      <li><strong>Les fonctionnalités</strong> : formulaire simple, chatbot IA, carte interactive, réservation en ligne...</li>
+      <li><strong>Le contenu</strong> : fournissez-vous les textes et photos, ou faut-il tout créer ?</li>
+      <li><strong>Le SEO</strong> : optimisation de base ou stratégie complète avec articles de blog ?</li>
+    </ul>
+
+    <h2>Pourquoi AB WebStudio est 20 à 40% moins cher qu'une agence</h2>
+    <p>En micro-entreprise, je n'ai pas de loyer de bureau, pas d'équipe à gérer, pas de frais de structure. J'utilise les meilleurs outils du marché — dont l'IA — pour produire plus vite et mieux. Ces économies, je vous les répercute directement. Vous payez la prestation, pas l'overhead.</p>
+
+    <div class="article-links">
+      <h4>Articles liés</h4>
+      <ul>
+        <li><button onclick="showPage('article-github-vs-hebergeur')">→ GitHub Pages vs hébergeur classique : les coûts comparés</button></li>
+        <li><button onclick="showPage('article-shopify-vs-prestashop')">→ Shopify vs PrestaShop : quel coût pour votre e-commerce ?</button></li>
+        <li><button onclick="showPage('processus')">→ Découvrir notre processus de création</button></li>
+      </ul>
+    </div>
+    <div class="article-cta">
+      <h3>Vous voulez un devis précis ?</h3>
+      <p>Réponse sous 48h, sans engagement. Je vous donne un prix clair dès le premier échange.</p>
+      <button class="btn-primary" onclick="showPage('contact')" style="margin-top:4px;">Demander un devis gratuit →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE 4 : GITHUB VS HEBERGEUR -->
+<div id="page-article-github-vs-hebergeur" class="page">
+  <div class="article-nav-bar">
+    <button class="back-btn" onclick="showPage('blog')">← Blog</button>
+    <span>·</span><span>Hébergement</span>
+  </div>
+  <div class="article-hero">
+    <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=1400&q=80" alt="Rivière hébergement">
+    <div class="article-hero-overlay"></div>
+    <div class="article-header">
+      <div class="article-cat">Hébergement</div>
+      <h1>GitHub Pages vs hébergeur classique : lequel choisir pour votre site ?</h1>
+      <div class="article-meta">Alexis Bernard · AB WebStudio · Mars 2026 · 7 min de lecture</div>
+    </div>
+  </div>
+  <div class="article-body">
+    <p>Quand on crée un site web, l'hébergement est souvent le dernier sujet auquel on pense — et pourtant c'est fondamental. GitHub Pages et les hébergeurs classiques comme OVH répondent à des besoins différents. Voici comment choisir.</p>
+
+    <h2>GitHub Pages : qu'est-ce que c'est ?</h2>
+    <p>GitHub Pages est un service d'hébergement <strong>gratuit</strong> proposé par GitHub. Il permet de publier des sites web statiques (HTML, CSS, JavaScript) directement depuis un dépôt GitHub. C'est la solution que j'utilise pour des sites comme <button onclick="showPage('realisations')" style="background:none;border:none;color:var(--em-d);cursor:pointer;font-family:var(--body);font-size:15px;text-decoration:underline;padding:0;">Sparus.fr</button>.</p>
+
+    <h3>Avantages de GitHub Pages</h3>
+    <ul>
+      <li>✅ Gratuit pour les sites statiques</li>
+      <li>✅ HTTPS inclus (certificat SSL automatique)</li>
+      <li>✅ CDN mondial — chargement rapide partout</li>
+      <li>✅ Très fiable (infrastructure GitHub/Microsoft)</li>
+      <li>✅ Nom de domaine personnalisé possible (OVH, etc.)</li>
+    </ul>
+
+    <h3>Limites de GitHub Pages</h3>
+    <ul>
+      <li>❌ Sites statiques uniquement (pas de PHP, pas de base de données)</li>
+      <li>❌ Pas d'emails professionnels inclus</li>
+      <li>❌ Taille limitée à 1 Go par dépôt</li>
+    </ul>
+
+    <img class="article-img" src="https://images.unsplash.com/photo-1440342359743-84fcb8c21f21?w=800&q=80" alt="Nature hébergement">
+
+    <h2>Les hébergeurs classiques (OVH, o2switch, Infomaniak…)</h2>
+    <p>Les hébergeurs classiques proposent des serveurs PHP, des bases de données MySQL, des emails professionnels et une interface de gestion (cPanel ou Plesk). Indispensables pour WordPress, PrestaShop ou tout CMS dynamique.</p>
+
+    <h3>Avantages des hébergeurs classiques</h3>
+    <ul>
+      <li>✅ Compatible avec tous les CMS (WordPress, PrestaShop, Joomla…)</li>
+      <li>✅ Emails professionnels inclus (contact@votre-domaine.fr)</li>
+      <li>✅ Base de données MySQL incluse</li>
+      <li>✅ Support technique disponible</li>
+    </ul>
+
+    <h3>Inconvénients</h3>
+    <ul>
+      <li>❌ Payant : entre 3€ et 15€/mois selon l'offre</li>
+      <li>❌ Performances variables selon le serveur mutualisé</li>
+      <li>❌ Configuration plus complexe</li>
+    </ul>
+
+    <h2>Mon conseil selon votre situation</h2>
+    <p><strong>Choisissez GitHub Pages si :</strong> vous avez un site vitrine simple, statique, sans backend. C'est gratuit, rapide et fiable.</p>
+    <p><strong>Choisissez un hébergeur classique si :</strong> vous avez un WordPress, un PrestaShop ou besoin d'emails pro. OVH propose des offres à partir de 3€/mois, parfaitement suffisantes pour commencer.</p>
+
+    <div class="article-links">
+      <h4>Articles liés</h4>
+      <ul>
+        <li><button onclick="showPage('article-cout-site')">→ Combien coûte vraiment un site web en 2026 ?</button></li>
+        <li><button onclick="showPage('article-shopify-vs-prestashop')">→ Shopify vs PrestaShop : comparatif complet</button></li>
+        <li><button onclick="showPage('article-core-web-vitals')">→ Core Web Vitals : optimiser les performances de votre site</button></li>
+      </ul>
+    </div>
+    <div class="article-cta">
+      <h3>Vous hésitez sur la solution technique ?</h3>
+      <p>Je vous conseille gratuitement sur le choix de l'hébergement adapté à votre projet.</p>
+      <button class="btn-primary" onclick="showPage('contact')" style="margin-top:4px;">Me contacter →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE 5 : CORE WEB VITALS -->
+<div id="page-article-core-web-vitals" class="page">
+  <div class="article-nav-bar">
+    <button class="back-btn" onclick="showPage('blog')">← Blog</button>
+    <span>·</span><span>Performance</span>
+  </div>
+  <div class="article-hero">
+    <img src="https://images.unsplash.com/photo-1440342359743-84fcb8c21f21?w=1400&q=80" alt="Performance nature">
+    <div class="article-hero-overlay"></div>
+    <div class="article-header">
+      <div class="article-cat">Performance</div>
+      <h1>Core Web Vitals : ce que Google mesure vraiment sur votre site</h1>
+      <div class="article-meta">Alexis Bernard · AB WebStudio · Fév. 2026 · 8 min de lecture</div>
+    </div>
+  </div>
+  <div class="article-body">
+    <p>Depuis 2021, Google utilise les Core Web Vitals comme critère officiel de classement. Ces trois métriques mesurent l'expérience réelle des utilisateurs sur votre site. Comprendre et optimiser ces indicateurs, c'est s'assurer un avantage concurrentiel durable sur vos concurrents qui les ignorent.</p>
+
+    <h2>Les 3 Core Web Vitals expliqués simplement</h2>
+    <h3>LCP — Largest Contentful Paint</h3>
+    <p>Le LCP mesure le temps de chargement du <strong>plus grand élément visible</strong> de votre page (généralement une image hero ou un bloc de texte). Un bon LCP est inférieur à 2,5 secondes. Au-delà de 4 secondes, c'est rouge — et votre classement en pâtit.</p>
+    <p><strong>Pour améliorer le LCP :</strong> compressez vos images en WebP, utilisez un CDN, pré-chargez vos ressources critiques avec <code>rel="preload"</code>.</p>
+
+    <img class="article-img" src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&q=80" alt="Nature performance">
+
+    <h3>INP — Interaction to Next Paint</h3>
+    <p>L'INP (qui a remplacé le FID en 2024) mesure le <strong>délai de réponse</strong> de votre site lorsqu'un utilisateur interagit avec lui — clic sur un bouton, saisie dans un formulaire. Un bon INP est inférieur à 200ms.</p>
+    <p><strong>Pour améliorer l'INP :</strong> réduisez les scripts JavaScript bloquants, différez le chargement des scripts non critiques, évitez les traitements lourds dans le thread principal.</p>
+
+    <h3>CLS — Cumulative Layout Shift</h3>
+    <p>Le CLS mesure l'<strong>instabilité visuelle</strong> de votre page — ces moments frustrants où vous allez cliquer sur un bouton et la page saute juste avant. Un bon CLS est inférieur à 0,1.</p>
+    <p><strong>Pour améliorer le CLS :</strong> définissez des dimensions fixes pour vos images et vidéos, évitez d'injecter du contenu dynamique au-dessus du contenu visible, réservez de l'espace pour les publicités.</p>
+
+    <h2>Comment mesurer vos Core Web Vitals ?</h2>
+    <ul>
+      <li><strong>Google Search Console</strong> → Rapport Expérience → Core Web Vitals</li>
+      <li><strong>PageSpeed Insights</strong> (pagespeed.web.dev) → analyse en temps réel</li>
+      <li><strong>Chrome DevTools</strong> → onglet Lighthouse pour une analyse complète</li>
+    </ul>
+
+    <div class="article-links">
+      <h4>Articles liés</h4>
+      <ul>
+        <li><button onclick="showPage('article-vitesse-site')">→ Vitesse de chargement : pourquoi chaque seconde compte</button></li>
+        <li><button onclick="showPage('article-mobile-first')">→ Mobile-first : la philosophie qui change tout</button></li>
+        <li><button onclick="showPage('article-seo-erreurs')">→ 5 erreurs SEO à corriger en priorité</button></li>
+      </ul>
+    </div>
+    <div class="article-cta">
+      <h3>Vos Core Web Vitals sont dans le rouge ?</h3>
+      <p>Je réalise un audit complet de vos performances et propose un plan d'action concret.</p>
+      <button class="btn-primary" onclick="showPage('contact')" style="margin-top:4px;">Demander un audit →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE 6 : SPORT WEB -->
+<div id="page-article-sport-web" class="page">
+  <div class="article-nav-bar">
+    <button class="back-btn" onclick="showPage('blog')">← Blog</button>
+    <span>·</span><span>Sport Business</span>
+  </div>
+  <div class="article-hero">
+    <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1400&q=80" alt="Sport business web">
+    <div class="article-hero-overlay"></div>
+    <div class="article-header">
+      <div class="article-cat">Sport Business</div>
+      <h1>Site web pour club de sport : les erreurs à éviter absolument</h1>
+      <div class="article-meta">Alexis Bernard · AB WebStudio · Jan. 2026 · 7 min de lecture</div>
+    </div>
+  </div>
+  <div class="article-body">
+    <p>Formé à l'<strong>AMOS Sport Business School</strong>, j'ai une connaissance intime du monde sportif et de ses enjeux numériques. Les clubs de sport ont des besoins spécifiques que la plupart des agences web ne comprennent pas. Voici les erreurs les plus fréquentes que j'observe, et comment les éviter.</p>
+
+    <h2>Erreur 1 : Un site statique qui n'est jamais mis à jour</h2>
+    <p>Le site d'un club de sport doit vivre. Les résultats des matchs, le calendrier, les actualités, les inscriptions — tout cela change constamment. Un site qui affiche des informations datées de 3 mois envoie un signal terrible à vos adhérents et partenaires potentiels.</p>
+    <p><strong>Solution :</strong> Intégrez un CMS (WordPress) qui vous permet de mettre à jour vous-même le contenu, ou optez pour un site avec un module de gestion des matchs et résultats.</p>
+
+    <img class="article-img" src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80" alt="Sport et nature">
+
+    <h2>Erreur 2 : Ignorer les adhérents potentiels</h2>
+    <p>La page d'accueil d'un club de sport doit répondre en quelques secondes à la question d'un nouvel arrivant : "Comment je m'inscris ? Quel est le tarif ? Où vous entraînez-vous ?" Si ces informations ne sont pas accessibles immédiatement, vous perdez des adhérents.</p>
+
+    <h2>Erreur 3 : Négliger la page partenaires</h2>
+    <p>Vos partenaires et sponsors financent une partie de votre activité. En échange, ils attendent de la visibilité. Une page partenaires soignée, avec les logos bien affichés et des liens vers leurs sites, est le minimum syndical — et un argument de vente pour convaincre de nouveaux sponsors.</p>
+
+    <h2>Erreur 4 : Pas de boutique en ligne</h2>
+    <p>Maillots, équipements, goodies — la boutique en ligne est une source de revenus supplémentaire souvent inexploitée par les clubs amateurs. Une boutique PrestaShop ou Shopify bien configurée peut générer plusieurs milliers d'euros de revenus complémentaires par saison.</p>
+
+    <div class="article-quote">
+      <p>"Le digital n'est plus optionnel pour les clubs de sport. C'est le premier contact qu'un parent ou un sportif a avec votre structure — avant même de mettre les pieds dans vos installations."</p>
+    </div>
+
+    <div class="article-links">
+      <h4>Articles liés</h4>
+      <ul>
+        <li><button onclick="showPage('service-sport')">→ Notre service Sport Business</button></li>
+        <li><button onclick="showPage('article-seo-local')">→ SEO local : être trouvé par les sportifs de votre ville</button></li>
+        <li><button onclick="showPage('article-cout-site')">→ Combien coûte un site web pour un club de sport ?</button></li>
+      </ul>
+    </div>
+    <div class="article-cta">
+      <h3>Vous gérez un club de sport ?</h3>
+      <p>Je comprends vos enjeux — parlons de votre projet autour d'un devis gratuit et sans engagement.</p>
+      <button class="btn-primary" onclick="showPage('contact')" style="margin-top:4px;">Demander un devis →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE 7 : SEO LOCAL -->
+<div id="page-article-seo-local" class="page">
+  <div class="article-nav-bar">
+    <button class="back-btn" onclick="showPage('blog')">← Blog</button>
+    <span>·</span><span>SEO Local</span>
+  </div>
+  <div class="article-hero">
+    <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1400&q=80" alt="SEO local nature">
+    <div class="article-hero-overlay"></div>
+    <div class="article-header">
+      <div class="article-cat">SEO Local</div>
+      <h1>SEO local à Nice : comment dominer Google dans votre ville</h1>
+      <div class="article-meta">Alexis Bernard · AB WebStudio · Déc. 2025 · 8 min de lecture</div>
+    </div>
+  </div>
+  <div class="article-body">
+    <p>Vous êtes artisan, commerçant ou professionnel libéral à Nice et ses environs ? Le SEO local est votre meilleure arme pour attirer des clients qui cherchent exactement ce que vous proposez, à quelques kilomètres de chez eux. Voici comment je le mets en place pour mes clients.</p>
+
+    <h2>Qu'est-ce que le SEO local ?</h2>
+    <p>Le SEO local, c'est l'ensemble des techniques qui permettent à votre site d'apparaître en bonne position sur des recherches géolocalisées : <strong>"plombier Nice"</strong>, <strong>"restaurant végétarien Côte d'Azur"</strong>, <strong>"création site web Nice"</strong>. L'enjeu est d'apparaître dans deux zones : les résultats organiques classiques et le <strong>"Pack Local"</strong> — les 3 fiches Google Maps affichées en haut des résultats.</p>
+
+    <h2>Les 5 piliers du SEO local</h2>
+    <h3>1. Google My Business optimisé</h3>
+    <p>La fiche Google My Business est la base du SEO local. Elle doit être complète à 100% : nom, adresse, téléphone, horaires, catégorie principale, description optimisée, photos régulières, réponses aux avis. Une fiche incomplète, c'est une opportunité perdue.</p>
+
+    <img class="article-img" src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80" alt="Nature local SEO">
+
+    <h3>2. Des citations locales cohérentes (NAP)</h3>
+    <p>NAP = Name, Address, Phone. Votre nom, adresse et téléphone doivent être strictement identiques sur tous les annuaires où vous apparaissez : Pages Jaunes, Tripadvisor, Yelp, votre site, votre fiche Google. La moindre incohérence nuit à votre crédibilité aux yeux de Google.</p>
+
+    <h3>3. Des pages localisées sur votre site</h3>
+    <p>Votre site doit mentionner naturellement votre localisation : "Alexis Bernard, créateur de sites web basé à Nice, intervient sur toute la Côte d'Azur." Ces signaux géographiques aident Google à comprendre où vous exercez.</p>
+
+    <h3>4. Les avis clients</h3>
+    <p>Les avis Google sont un facteur de classement local. Plus vous en avez, mieux c'est. Demandez systématiquement à vos clients satisfaits de laisser un avis — la grande majorité accepte si vous leur envoyez le lien directement.</p>
+
+    <h3>5. Du contenu local</h3>
+    <p>Créez du contenu qui parle de votre territoire : "Les meilleurs restaurants de Nice pour un déjeuner d'affaires", "Guide du e-commerce pour les commerçants niçois"... Ce type de contenu attire du trafic local qualifié et renforce votre ancrage géographique.</p>
+
+    <div class="article-links">
+      <h4>Articles liés</h4>
+      <ul>
+        <li><button onclick="showPage('article-google-my-business')">→ Google My Business : le guide complet</button></li>
+        <li><button onclick="showPage('article-seo-erreurs')">→ Les 5 erreurs SEO qui freinent votre visibilité</button></li>
+        <li><button onclick="showPage('localiser')">→ AB WebStudio est basé à Nice — nous localiser</button></li>
+      </ul>
+    </div>
+    <div class="article-cta">
+      <h3>Vous voulez dominer Google à Nice ?</h3>
+      <p>Je mets en place votre stratégie SEO locale — audit, optimisation, suivi mensuel.</p>
+      <button class="btn-primary" onclick="showPage('contact')" style="margin-top:4px;">Demander un audit SEO local →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE 8 : SHOPIFY VS PRESTASHOP -->
+<div id="page-article-shopify-vs-prestashop" class="page">
+  <div class="article-nav-bar">
+    <button class="back-btn" onclick="showPage('blog')">← Blog</button>
+    <span>·</span><span>E-commerce</span>
+  </div>
+  <div class="article-hero">
+    <img src="https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=1400&q=80" alt="E-commerce nature">
+    <div class="article-hero-overlay"></div>
+    <div class="article-header">
+      <div class="article-cat">E-commerce</div>
+      <h1>Shopify vs PrestaShop : quel outil pour votre boutique en ligne ?</h1>
+      <div class="article-meta">Alexis Bernard · AB WebStudio · Nov. 2025 · 9 min de lecture</div>
+    </div>
+  </div>
+  <div class="article-body">
+    <p>C'est le match que tous mes clients e-commerce me demandent de trancher. Shopify ou PrestaShop ? Les deux sont excellents — mais pour des profils très différents. Ayant développé des boutiques sur les deux plateformes (dont <strong>Tiebreak.fr</strong> sur PrestaShop), voici mon analyse honnête.</p>
+
+    <h2>Shopify : le champion de la simplicité</h2>
+    <p>Shopify est une solution SaaS (hébergée dans le cloud). Vous payez un abonnement mensuel (à partir de 29€/mois) et vous bénéficiez d'une plateforme clé en main : hébergement, SSL, mises à jour, sécurité — tout est géré.</p>
+
+    <h3>Pour qui ?</h3>
+    <ul>
+      <li>Débutants en e-commerce qui veulent démarrer vite</li>
+      <li>Boutiques avec un catalogue simple (moins de 500 produits)</li>
+      <li>Entrepreneurs qui veulent se concentrer sur la vente, pas sur la technique</li>
+      <li>Projets dropshipping</li>
+    </ul>
+
+    <img class="article-img" src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&q=80" alt="Shopify comparatif">
+
+    <h2>PrestaShop : la puissance open-source</h2>
+    <p>PrestaShop est une solution open-source, gratuite à télécharger. Vous l'installez sur votre propre hébergement et vous avez un contrôle total sur le code, la base de données et les fonctionnalités.</p>
+
+    <h3>Pour qui ?</h3>
+    <ul>
+      <li>Boutiques avec de gros catalogues (plusieurs milliers de produits)</li>
+      <li>Projets nécessitant des fonctionnalités très spécifiques</li>
+      <li>Entreprises qui veulent maîtriser leur infrastructure</li>
+      <li>Budgets serrés sur le long terme (pas d'abonnement mensuel)</li>
+    </ul>
+
+    <h2>Comparatif rapide</h2>
+    <div class="article-quote">
+      <p><strong>Shopify :</strong> 29-299€/mois + commissions sur les ventes. Simple, rapide, limité en personnalisation.<br><br><strong>PrestaShop :</strong> Gratuit + hébergement (5-15€/mois). Complexe, puissant, nécessite des compétences techniques ou un développeur.</p>
+    </div>
+
+    <h2>Mon conseil</h2>
+    <p>Pour 80% de mes clients e-commerce, je recommande <strong>Shopify</strong> pour démarrer — la prise en main est rapide et les coûts initiaux sont maîtrisés. Pour des projets ambitieux avec des besoins spécifiques et un catalogue important, <strong>PrestaShop</strong> est plus adapté sur le long terme.</p>
+
+    <div class="article-links">
+      <h4>Articles liés</h4>
+      <ul>
+        <li><button onclick="showPage('article-cout-site')">→ Combien coûte vraiment un site e-commerce ?</button></li>
+        <li><button onclick="showPage('article-github-vs-hebergeur')">→ GitHub Pages vs hébergeur classique : le guide</button></li>
+        <li><button onclick="showPage('service-ecommerce')">→ Notre service e-commerce</button></li>
+      </ul>
+    </div>
+    <div class="article-cta">
+      <h3>Vous voulez lancer votre boutique en ligne ?</h3>
+      <p>Je vous aide à choisir la bonne plateforme et à créer une boutique qui convertit.</p>
+      <button class="btn-primary" onclick="showPage('contact')" style="margin-top:4px;">Demander un devis e-commerce →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE 9 : VITESSE SITE -->
+<div id="page-article-vitesse-site" class="page">
+  <div class="article-nav-bar">
+    <button class="back-btn" onclick="showPage('blog')">← Blog</button>
+    <span>·</span><span>Performance</span>
+  </div>
+  <div class="article-hero">
+    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1400&q=80" alt="Vitesse nature">
+    <div class="article-hero-overlay"></div>
+    <div class="article-header">
+      <div class="article-cat">Performance</div>
+      <h1>Vitesse de chargement : pourquoi chaque seconde vous coûte des clients</h1>
+      <div class="article-meta">Alexis Bernard · AB WebStudio · Oct. 2025 · 7 min de lecture</div>
+    </div>
+  </div>
+  <div class="article-body">
+    <p>Amazon a calculé qu'une seconde de chargement supplémentaire leur coûtait 1,6 milliard de dollars de revenus par an. Vous n'êtes pas Amazon — mais le principe s'applique à toute échelle. Chaque seconde de délai, c'est des visiteurs qui partent avant même d'avoir vu votre offre.</p>
+
+    <h2>Les chiffres qui font mal</h2>
+    <ul>
+      <li>53% des utilisateurs mobiles abandonnent un site qui met plus de <strong>3 secondes</strong> à charger</li>
+      <li>Un délai d'1 seconde réduit les conversions de <strong>7%</strong></li>
+      <li>Les sites qui chargent en 1 seconde convertissent <strong>3 fois mieux</strong> que ceux qui chargent en 5 secondes</li>
+      <li>Google pénalise les sites lents dans ses résultats depuis 2021</li>
+    </ul>
+
+    <img class="article-img" src="https://images.unsplash.com/photo-1440342359743-84fcb8c21f21?w=800&q=80" alt="Performance vitesse">
+
+    <h2>Les 6 causes principales d'un site lent</h2>
+    <h3>1. Des images trop lourdes</h3>
+    <p>C'est la cause numéro 1. Une image non compressée de 5 Mo là où une image WebP de 200 Ko ferait le même travail visuellement. Utilisez toujours des formats modernes (WebP, AVIF) et compressez avant d'uploader.</p>
+
+    <h3>2. Trop de plugins ou scripts</h3>
+    <p>Chaque plugin WordPress charge des fichiers CSS et JavaScript supplémentaires. 40 plugins actifs, c'est souvent 40 scripts qui se chargent en cascade. Faites le ménage régulièrement.</p>
+
+    <h3>3. Un hébergement mutualisé bas de gamme</h3>
+    <p>Vous partagez votre serveur avec des centaines d'autres sites. Quand votre voisin de serveur reçoit un pic de trafic, votre site ralentit. Investir dans un bon hébergement (o2switch, Infomaniak) change tout.</p>
+
+    <h3>4. Pas de mise en cache</h3>
+    <p>Sans cache, votre serveur recalcule chaque page à chaque visite. Avec un plugin de cache (WP Rocket, W3 Total Cache), les pages sont servies instantanément depuis la mémoire.</p>
+
+    <h3>5. Des polices Google Fonts chargées depuis l'externe</h3>
+    <p>Chaque appel externe (Google Fonts, Font Awesome) ajoute de la latence. Hébergez vos polices localement quand c'est possible.</p>
+
+    <h3>6. Pas de CDN</h3>
+    <p>Un CDN (Content Delivery Network) distribue vos fichiers depuis des serveurs proches de vos visiteurs. Cloudflare propose un CDN gratuit qui améliore significativement les performances mondiales.</p>
+
+    <div class="article-links">
+      <h4>Articles liés</h4>
+      <ul>
+        <li><button onclick="showPage('article-core-web-vitals')">→ Core Web Vitals : les métriques de performance de Google</button></li>
+        <li><button onclick="showPage('article-mobile-first')">→ Mobile-first : performance et design main dans la main</button></li>
+        <li><button onclick="showPage('article-seo-erreurs')">→ Les erreurs SEO les plus coûteuses à corriger</button></li>
+      </ul>
+    </div>
+    <div class="article-cta">
+      <h3>Votre site est trop lent ?</h3>
+      <p>Je diagnostique et optimise les performances de votre site — résultats mesurables garantis.</p>
+      <button class="btn-primary" onclick="showPage('contact')" style="margin-top:4px;">Optimiser mon site →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLE 10 : GOOGLE MY BUSINESS -->
+<div id="page-article-google-my-business" class="page">
+  <div class="article-nav-bar">
+    <button class="back-btn" onclick="showPage('blog')">← Blog</button>
+    <span>·</span><span>Visibilité</span>
+  </div>
+  <div class="article-hero">
+    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1400&q=80" alt="Google My Business nature">
+    <div class="article-hero-overlay"></div>
+    <div class="article-header">
+      <div class="article-cat">Visibilité</div>
+      <h1>Google My Business : le guide complet pour dominer les recherches locales</h1>
+      <div class="article-meta">Alexis Bernard · AB WebStudio · Sept. 2025 · 8 min de lecture</div>
+    </div>
+  </div>
+  <div class="article-body">
+    <p>Google My Business (désormais appelé <strong>Google Business Profile</strong>) est l'outil le plus puissant et le plus sous-utilisé du marketing local. Gratuit, simple à configurer et terriblement efficace — voici comment en tirer le maximum.</p>
+
+    <h2>Pourquoi Google My Business est indispensable</h2>
+    <p>Quand quelqu'un cherche "créateur de sites web Nice" ou "plombier Côte d'Azur", Google affiche en premier le <strong>Pack Local</strong> — ces 3 fiches d'entreprises avec carte, note et informations clés. Apparaître dans ce Pack Local, c'est être visible avant même les premiers résultats organiques.</p>
+
+    <img class="article-img" src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80" alt="Local business nature">
+
+    <h2>Créer et optimiser votre fiche en 10 étapes</h2>
+    <h3>Étape 1 : Revendiquer votre fiche</h3>
+    <p>Rendez-vous sur business.google.com, recherchez votre entreprise et revendiquez-la. Si elle n'existe pas encore, créez-la. Google enverra un code de vérification par courrier, SMS ou email selon votre situation.</p>
+
+    <h3>Étape 2 : Compléter toutes les informations</h3>
+    <p>Nom exact, adresse complète, numéro de téléphone, site web, horaires d'ouverture, catégorie principale et catégories secondaires — tout doit être rempli et précis. La cohérence avec votre site web est essentielle.</p>
+
+    <h3>Étape 3 : Ajouter des photos de qualité</h3>
+    <p>Les fiches avec photos reçoivent 42% de demandes d'itinéraires en plus et 35% de clics en plus vers le site web. Ajoutez minimum 10 photos : logo, façade, intérieur, équipe, produits/réalisations.</p>
+
+    <h3>Étape 4 : Collecter des avis Google</h3>
+    <p>Les avis sont le facteur de classement local le plus influent après la proximité géographique. Créez un lien court vers votre page d'avis et envoyez-le à vos clients satisfaits après chaque prestation.</p>
+
+    <h3>Étape 5 : Publier des posts régulièrement</h3>
+    <p>Google My Business permet de publier des actualités, offres et événements directement sur votre fiche. Un post par semaine suffit à signaler à Google que votre fiche est active et tenue à jour.</p>
+
+    <div class="article-quote">
+      <p>"Une fiche Google My Business bien optimisée peut générer plus de trafic qualifié qu'une campagne Google Ads — et elle est entièrement gratuite."</p>
+    </div>
+
+    <h2>Les erreurs à éviter absolument</h2>
+    <ul>
+      <li>❌ Ne pas répondre aux avis négatifs (ça vous coûte de la crédibilité)</li>
+      <li>❌ Des horaires incorrects ou non mis à jour</li>
+      <li>❌ Des photos de mauvaise qualité ou trop rares</li>
+      <li>❌ Ignorer les questions posées par les internautes</li>
+      <li>❌ Un nom d'entreprise qui bourre les mots-clés ("Plombier Nice 06 urgence pas cher")</li>
+    </ul>
+
+    <div class="article-links">
+      <h4>Articles liés</h4>
+      <ul>
+        <li><button onclick="showPage('article-seo-local')">→ SEO local à Nice : la stratégie complète</button></li>
+        <li><button onclick="showPage('article-seo-erreurs')">→ Les 5 erreurs SEO qui tuent votre visibilité</button></li>
+        <li><button onclick="showPage('service-communication')">→ Notre service communication digitale</button></li>
+      </ul>
+    </div>
+    <div class="article-cta">
+      <h3>Vous voulez une fiche Google parfaitement optimisée ?</h3>
+      <p>Je configure et optimise votre Google Business Profile de A à Z — en une session.</p>
+      <button class="btn-primary" onclick="showPage('contact')" style="margin-top:4px;">Optimiser ma fiche Google →</button>
+    </div>
+  </div>
+</div>
+
 
 <script>
 // SLIDER
@@ -1341,6 +2000,9 @@ async function callClaude(msg){
 function sendMessage(){const i=document.getElementById('chat-input');const t=i.value.trim();if(!t)return;addMsg(t,'user');i.value='';callClaude(t);}
 function sendSugg(btn){const t=btn.textContent.replace(/^.\s/,'').trim();addMsg(t,'user');callClaude(t);}
 function handleKey(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendMessage();}}
+</script>
+</body>
+</html>
 </script>
 </body>
 </html>
