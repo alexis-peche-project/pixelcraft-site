@@ -38,7 +38,7 @@ nav{position:sticky;top:0;z-index:200;background:rgba(244,250,246,.97);backdrop-
 .nav-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.3);z-index:199;}
 .nav-overlay.open{display:block;}
 
-.page{display:none;}.page.active{display:block;}
+.page{display:none;margin:0;padding:0;}.page.active{display:block;margin:0;padding:0;}
 
 /* HERO */
 .hero{position:relative;height:560px;overflow:hidden;}
@@ -110,7 +110,7 @@ nav{position:sticky;top:0;z-index:200;background:rgba(244,250,246,.97);backdrop-
 .article-hero{position:relative;height:420px;overflow:hidden;}
 .article-hero img{width:100%;height:100%;object-fit:cover;}
 .article-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(4,18,10,.95) 0%,rgba(4,18,10,.3) 60%,transparent 100%);}
-.article-header{position:absolute;bottom:0;left:0;right:0;padding:40px 80px;}
+.article-header{position:absolute;bottom:0;left:0;right:0;padding:48px 80px 40px;}
 .article-cat{display:inline-block;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--em);background:rgba(0,200,83,.15);border:1px solid rgba(0,200,83,.3);border-radius:20px;padding:4px 12px;margin-bottom:12px;}
 .article-header h1{font-family:var(--display);font-size:42px;color:#fff;line-height:1.15;max-width:700px;margin-bottom:10px;}
 .article-meta{font-size:13px;color:rgba(255,255,255,.5);}
@@ -143,6 +143,21 @@ nav{position:sticky;top:0;z-index:200;background:rgba(244,250,246,.97);backdrop-
   .article-nav-bar{padding:12px 20px;}
 }
 
+/* PAGE TOP PADDING */
+[id^="page-service-"] .service-hero,
+[id^="page-article-"] .article-nav-bar {
+  margin-top: 0;
+}
+[id^="page-service-"],
+[id^="page-article-"],
+#page-mentions,
+#page-cgv {
+  padding-top: 0;
+}
+.article-nav-bar + .article-hero {
+  margin-top: 0;
+}
+
 /* EXPERTISE CARDS */
 .expertise-section{
   padding:72px 48px;
@@ -166,10 +181,10 @@ nav{position:sticky;top:0;z-index:200;background:rgba(244,250,246,.97);backdrop-
 
 
 /* SERVICE PAGES */
-.service-hero{position:relative;height:390px;overflow:hidden;border-radius:0;}
+.service-hero{position:relative;height:320px;overflow:hidden;border-radius:0;padding-top:0;}
 .service-hero img{width:100%;height:100%;object-fit:cover;}
 .service-hero-overlay{position:absolute;inset:0;background:linear-gradient(110deg,rgba(4,18,10,.95) 0%,rgba(4,18,10,.6) 100%);}
-.service-hero-content{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 80px;max-width:680px;}
+.service-hero-content{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 80px 40px;max-width:680px;}
 .service-hero-content h1{font-family:var(--display);font-size:44px;color:#fff;margin-bottom:12px;line-height:1.1;}
 .service-hero-content p{font-size:16px;color:rgba(255,255,255,.7);line-height:1.75;}
 .service-features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px;}
@@ -177,12 +192,13 @@ nav{position:sticky;top:0;z-index:200;background:rgba(244,250,246,.97);backdrop-
 .service-feature .icon{font-size:28px;margin-bottom:12px;}
 .service-feature h3{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:6px;}
 .service-feature p{font-size:13px;color:var(--muted);line-height:1.6;}
-.service-cta{background:var(--em-xl);border:1.5px solid var(--em-l);border-radius:16px;padding:32px;margin-top:40px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;}
-.service-cta h3{font-size:20px;font-weight:700;color:var(--ink);margin-bottom:6px;}
-.service-cta p{font-size:14px;color:var(--muted);}
-.service-price{background:var(--ink);color:#fff;border-radius:14px;padding:20px 28px;text-align:center;flex-shrink:0;}
-.service-price .price{font-family:var(--display);font-size:32px;color:var(--em);font-weight:700;}
-.service-price .price-label{font-size:12px;color:rgba(255,255,255,.5);margin-top:4px;}
+.service-cta{background:var(--ink);border-radius:16px;padding:32px;margin-top:40px;display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:24px;}
+.service-cta h3{font-size:18px;font-weight:700;color:#fff;margin-bottom:6px;}
+.service-cta p{font-size:13px;color:rgba(255,255,255,.55);}
+.service-price{text-align:right;flex-shrink:0;}
+.service-price .price-label{font-size:12px;color:rgba(255,255,255,.45);display:block;margin-bottom:2px;}
+.service-price .price{font-family:var(--display);font-size:36px;color:var(--em);font-weight:700;display:block;line-height:1;}
+@media(max-width:768px){.service-cta{grid-template-columns:1fr;}}
 @media(max-width:768px){
   .service-hero-content{padding:0 24px;}
   .service-hero-content h1{font-size:30px;}
@@ -4171,8 +4187,7 @@ footer{background:#050F08;padding:0;}
         <p>Devis gratuit sous 48h — sans engagement. Réponse garantie.</p>
       </div>
       <div class="service-price">
-        <div class="price">500€</div>
-        <div class="price-label">À partir de · TVA non applicable</div>
+        <span class="price-label">À partir de · TVA non applicable</span><span class="price">500€</span>
       </div>
       <button class="btn-primary" onclick="showPage('contact')">Demander un devis →</button>
     </div>
@@ -4208,8 +4223,7 @@ footer{background:#050F08;padding:0;}
         <p>Shopify, PrestaShop ou WooCommerce — on choisit ensemble la meilleure solution pour vous.</p>
       </div>
       <div class="service-price">
-        <div class="price">800€</div>
-        <div class="price-label">À partir de · TVA non applicable</div>
+        <span class="price-label">À partir de · TVA non applicable</span><span class="price">800€</span>
       </div>
       <button class="btn-primary" onclick="showPage('contact')">Demander un devis →</button>
     </div>
@@ -4245,8 +4259,7 @@ footer{background:#050F08;padding:0;}
         <p>Un audit gratuit de votre site pour commencer — sans engagement.</p>
       </div>
       <div class="service-price">
-        <div class="price">300€</div>
-        <div class="price-label">À partir de · TVA non applicable</div>
+        <span class="price-label">À partir de · TVA non applicable</span><span class="price">300€</span>
       </div>
       <button class="btn-primary" onclick="showPage('contact')">Demander un audit →</button>
     </div>
@@ -4282,8 +4295,7 @@ footer{background:#050F08;padding:0;}
         <p>Envoyez-moi l'URL de votre site actuel — je vous donne un retour gratuit sous 48h.</p>
       </div>
       <div class="service-price">
-        <div class="price">600€</div>
-        <div class="price-label">À partir de · TVA non applicable</div>
+        <span class="price-label">À partir de · TVA non applicable</span><span class="price">600€</span>
       </div>
       <button class="btn-primary" onclick="showPage('contact')">Demander un devis →</button>
     </div>
@@ -4356,8 +4368,7 @@ footer{background:#050F08;padding:0;}
         <p>Clubs, associations, fédérations — devis gratuit adapté à votre structure.</p>
       </div>
       <div class="service-price">
-        <div class="price">600€</div>
-        <div class="price-label">À partir de · TVA non applicable</div>
+        <span class="price-label">À partir de · TVA non applicable</span><span class="price">600€</span>
       </div>
       <button class="btn-primary" onclick="showPage('contact')">Demander un devis →</button>
     </div>
