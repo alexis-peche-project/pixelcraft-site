@@ -24,8 +24,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 <link rel="stylesheet" href="style.css">
 <meta name="theme-color" content="#EFEBE3">
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__fx)document.documentElement.classList.remove("js")},4000);</script>
 </head>
-<body>
+<body class="pg-accueil">
 <a class="skip-link" href="#contenu">Aller au contenu</a>
 <header class="site-header">
   <nav aria-label="Navigation principale">
@@ -52,25 +53,27 @@
       <div class="hero-copy">
         <div class="eyebrow">Création de sites web · Nice &amp; toute la France</div>
         <h1>Création de site web à Nice, <em>enfin simple.</em></h1>
+        <p class="pour">Pour votre <span class="rot"><span class="rot-in"><b>site vitrine</b><b>boutique en ligne</b><b>blog</b><b>club de sport</b><b>site vitrine</b></span></span></p>
         <p class="lead">Des sites rapides, clairs et bien référencés, conçus sur mesure et livrés en 2 à 4 semaines. Un seul interlocuteur, du cahier des charges à la mise en ligne.</p>
         <div class="hero-cta">
           <a href="contact.html" class="btn-primary">Demander un devis gratuit <span aria-hidden="true">→</span></a>
           <a href="realisations.html" class="link-arrow">Voir les réalisations</a>
         </div>
       </div>
-      <div class="hero-visual">
+      <div class="hero-visual"><a class="badge-rond" href="contact.html" aria-label="Devis gratuit, réponse sous 48 heures"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><path id="cercle" d="M60,60 m-47,0 a47,47 0 1,1 94,0 a47,47 0 1,1 -94,0"/></defs><text><textPath href="#cercle" textLength="292" lengthAdjust="spacing">Devis gratuit · réponse sous 48 h · </textPath></text></svg><span aria-hidden="true">→</span></a>
         <a class="shot shot-a" href="realisations.html"><span class="shot-bar"><i></i><i></i><i></i></span><img src="real-sparus.png" alt="Capture d’écran du site Sparus.fr" width="1200" height="750"><span class="shot-cap">Sparus.fr — communauté de pêche</span></a>
         <a class="shot shot-b" href="realisations.html"><span class="shot-bar"><i></i><i></i><i></i></span><img src="real-tiebreak.png" alt="Capture d’écran de la boutique Tiebreak.fr" width="1200" height="750"><span class="shot-cap">Tiebreak.fr — boutique tennis</span></a>
       </div>
     </div>
+    <p class="hero-bas">Nice · toute la France · sites vitrines, boutiques et référencement</p>
   </section>
 
   <div class="facts-wrap">
     <dl class="facts">
-      <div><dt>2</dt><dd>sites livrés et en ligne</dd></div>
-      <div><dt>dès 500 €</dt><dd>pour un site vitrine</dd></div>
-      <div><dt>2 à 4 sem.</dt><dd>de la commande à la mise en ligne</dd></div>
-      <div><dt>48 h</dt><dd>pour recevoir une réponse</dd></div>
+      <div><dt><span data-count="2">2</span></dt><dd>sites livrés et en ligne</dd></div>
+      <div><dt>dès <span data-count="500">500</span> €</dt><dd>pour un site vitrine</dd></div>
+      <div><dt><span data-count="2">2</span> à <span data-count="4">4</span> sem.</dt><dd>de la commande à la mise en ligne</dd></div>
+      <div><dt><span data-count="48">48</span> h</dt><dd>pour recevoir une réponse</dd></div>
     </dl>
   </div>
 
@@ -90,13 +93,25 @@
     </div>
   </div>
 
-  <div class="service-body">
+  <section class="deroule" aria-label="Déroulé d’un projet">
+    <div class="deroule-in">
+      <div class="deroule-tete">
+        <div class="eyebrow">Comment ça se passe</div>
+        <h2>De l’idée au site en ligne, <em>en cinq étapes</em></h2>
+        <p>Un cadre simple, des échanges réguliers et aucune surprise sur le calendrier.</p>
+        <a class="btn-primary" href="processus.html">Voir le processus en détail</a>
+      </div>
+      <ol class="timeline"><li><span class="t-num">1</span><div><h3>Cahier des charges</h3><p>On met par écrit vos objectifs, vos pages et votre budget, pour que tout soit clair avant de commencer.</p></div></li><li><span class="t-num">2</span><div><h3>Réunion de lancement</h3><p>Un échange en visio ou à Nice pour valider la direction, le ton et les priorités.</p></div></li><li><span class="t-num">3</span><div><h3>Conception et développement</h3><p>Je crée le site, vous suivez l’avancement et vous validez chaque étape.</p></div></li><li><span class="t-num">4</span><div><h3>Mise en ligne</h3><p>Nom de domaine, hébergement, vérifications techniques et bases du référencement.</p></div></li><li><span class="t-num">5</span><div><h3>Suivi</h3><p>Corrections, évolutions et maintenance si vous le souhaitez : je reste votre interlocuteur.</p></div></li></ol>
+    </div>
+  </section>
+
+  <div class="service-body promesses">
     <div class="eyebrow">Ma façon de travailler</div>
     <h2>Un site sérieux, sans le prix <em>d’une agence</em></h2>
     <div class="service-features" style="margin-top:40px;">
-      <div class="feature-item"><h3>Des tarifs plus justes</h3><p>En micro-entreprise, je n’ai pas de charges de structure : mes devis sont 20 à 40 % moins chers que ceux d’une agence, pour un résultat de même niveau.</p></div>
-      <div class="feature-item"><h3>Visible dès le premier jour</h3><p>Structure, balises, vitesse et contenu sont pensés pour Google dès la conception, pas rajoutés après coup.</p></div>
-      <div class="feature-item"><h3>Un seul interlocuteur</h3><p>Cahier des charges, réunion de lancement, développement, mise en ligne et suivi : vous parlez à la même personne du début à la fin.</p></div>
+      <div class="feature-item" data-r><h3>Des tarifs plus justes</h3><p>En micro-entreprise, je n’ai pas de charges de structure : mes devis sont 20 à 40 % moins chers que ceux d’une agence, pour un résultat de même niveau.</p></div>
+      <div class="feature-item" data-r><h3>Visible dès le premier jour</h3><p>Structure, balises, vitesse et contenu sont pensés pour Google dès la conception, pas rajoutés après coup.</p></div>
+      <div class="feature-item" data-r><h3>Un seul interlocuteur</h3><p>Cahier des charges, réunion de lancement, développement, mise en ligne et suivi : vous parlez à la même personne du début à la fin.</p></div>
     </div>
   </div>
 
@@ -106,19 +121,19 @@
       <h2>Les technologies que <em>j’utilise</em></h2>
       <p>Des outils éprouvés, choisis pour leur fiabilité et leur performance.</p>
       <div class="tools-grid">
-        <div class="tool-pill"><img src="logo-github.png" class="tool-icon-img" alt="GitHub">GitHub Pages</div>
-        <div class="tool-pill"><img src="logo-prestashop.png" class="tool-icon-img" alt="PrestaShop">PrestaShop</div>
-        <div class="tool-pill"><img src="logo-shopify.png" class="tool-icon-img" alt="Shopify">Shopify</div>
-        <div class="tool-pill"><img src="logo-wordpress.png" class="tool-icon-img" alt="WordPress">WordPress</div>
-        <div class="tool-pill"><img src="logo-ovh.png" class="tool-icon-img" alt="OVH">OVH</div>
-        <div class="tool-pill"><img src="logo-canva.png" class="tool-icon-img" alt="Canva">Canva</div>
-        <div class="tool-pill"><img src="logo-googleads.png" class="tool-icon-img" alt="Google Ads">Google Ads</div>
-        <div class="tool-pill"><img src="logo-googlebusiness.png" class="tool-icon-img" alt="Google My Business">Google My Business</div>
-        <div class="tool-pill"><img src="logo-instagram.png" class="tool-icon-img" alt="Instagram">Instagram</div>
-        <div class="tool-pill"><img src="logo-excel.png" class="tool-icon-img" alt="Excel">Excel</div>
-        <div class="tool-pill"><img src="logo-photoshop.png" class="tool-icon-img" alt="Photoshop">Photoshop</div>
-        <div class="tool-pill"><img src="logo-chatgpt.png" class="tool-icon-img" alt="ChatGPT">ChatGPT</div>
-        <div class="tool-pill"><img src="logo-claude.png" class="tool-icon-img" alt="Claude">Claude</div>
+        <div class="tool-pill" data-r><img src="logo-github.png" class="tool-icon-img" alt="GitHub">GitHub Pages</div>
+        <div class="tool-pill" data-r><img src="logo-prestashop.png" class="tool-icon-img" alt="PrestaShop">PrestaShop</div>
+        <div class="tool-pill" data-r><img src="logo-shopify.png" class="tool-icon-img" alt="Shopify">Shopify</div>
+        <div class="tool-pill" data-r><img src="logo-wordpress.png" class="tool-icon-img" alt="WordPress">WordPress</div>
+        <div class="tool-pill" data-r><img src="logo-ovh.png" class="tool-icon-img" alt="OVH">OVH</div>
+        <div class="tool-pill" data-r><img src="logo-canva.png" class="tool-icon-img" alt="Canva">Canva</div>
+        <div class="tool-pill" data-r><img src="logo-googleads.png" class="tool-icon-img" alt="Google Ads">Google Ads</div>
+        <div class="tool-pill" data-r><img src="logo-googlebusiness.png" class="tool-icon-img" alt="Google My Business">Google My Business</div>
+        <div class="tool-pill" data-r><img src="logo-instagram.png" class="tool-icon-img" alt="Instagram">Instagram</div>
+        <div class="tool-pill" data-r><img src="logo-excel.png" class="tool-icon-img" alt="Excel">Excel</div>
+        <div class="tool-pill" data-r><img src="logo-photoshop.png" class="tool-icon-img" alt="Photoshop">Photoshop</div>
+        <div class="tool-pill" data-r><img src="logo-chatgpt.png" class="tool-icon-img" alt="ChatGPT">ChatGPT</div>
+        <div class="tool-pill" data-r><img src="logo-claude.png" class="tool-icon-img" alt="Claude">Claude</div>
       </div>
     </div>
   </div>
@@ -128,16 +143,24 @@
     <h2>Questions <em>fréquentes</em></h2>
     <p>Tout ce que vous voulez savoir avant de vous lancer.</p>
     <div class="faq-list">
-      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Combien coûte un site web avec AB WebStudio ?<div class="faq-icon">+</div></button><div class="faq-answer"><div class="faq-answer-inner">Les tarifs démarrent à partir de <strong>500€</strong>. Grâce à mon statut de micro-entrepreneur, je propose des tarifs <strong>20 à 40% inférieurs</strong> à ceux d'une agence classique, sans sacrifier la qualité.</div></div></div>
-      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Quel est le délai de livraison ?<div class="faq-icon">+</div></button><div class="faq-answer"><div class="faq-answer-inner">Un site vitrine est livré en <strong>2 à 4 semaines</strong> selon la complexité du projet. Tout commence par un cahier des charges et une réunion de lancement.</div></div></div>
-      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Vous travaillez sur quelles plateformes ?<div class="faq-icon">+</div></button><div class="faq-answer"><div class="faq-answer-inner">Je travaille sur <strong>GitHub Pages</strong>, <strong>PrestaShop</strong>, <strong>Shopify</strong> et <strong>WordPress</strong>. Le choix dépend de votre projet et de vos besoins.</div></div></div>
-      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Vous vous occupez du nom de domaine et de l'hébergement ?<div class="faq-icon">+</div></button><div class="faq-answer"><div class="faq-answer-inner">Oui, je gère tout de A à Z : achat du nom de domaine, configuration de l'hébergement, mise en ligne et vérifications techniques.</div></div></div>
-      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Que se passe-t-il après la livraison du site ?<div class="faq-icon">+</div></button><div class="faq-answer"><div class="faq-answer-inner">Je reste disponible après la mise en ligne pour toute correction ou évolution. Je propose aussi des services de <strong>maintenance, SEO et communication digitale</strong>.</div></div></div>
-      <div class="faq-item"><button class="faq-question" onclick="toggleFaq(this)">Je ne suis pas basé à Nice, pouvez-vous travailler avec moi ?<div class="faq-icon">+</div></button><div class="faq-answer"><div class="faq-answer-inner">Absolument ! Je travaille avec des clients dans <strong>toute la France</strong> en visioconférence. La distance n'est pas un frein.</div></div></div>
+      <div class="faq-item" data-r><button class="faq-question" onclick="toggleFaq(this)">Combien coûte un site web avec AB WebStudio ?<div class="faq-icon">+</div></button><div class="faq-answer"><div class="faq-answer-inner">Les tarifs démarrent à partir de <strong>500€</strong>. Grâce à mon statut de micro-entrepreneur, je propose des tarifs <strong>20 à 40% inférieurs</strong> à ceux d'une agence classique, sans sacrifier la qualité.</div></div></div>
+      <div class="faq-item" data-r><button class="faq-question" onclick="toggleFaq(this)">Quel est le délai de livraison ?<div class="faq-icon">+</div></button><div class="faq-answer"><div class="faq-answer-inner">Un site vitrine est livré en <strong>2 à 4 semaines</strong> selon la complexité du projet. Tout commence par un cahier des charges et une réunion de lancement.</div></div></div>
+      <div class="faq-item" data-r><button class="faq-question" onclick="toggleFaq(this)">Vous travaillez sur quelles plateformes ?<div class="faq-icon">+</div></button><div class="faq-answer"><div class="faq-answer-inner">Je travaille sur <strong>GitHub Pages</strong>, <strong>PrestaShop</strong>, <strong>Shopify</strong> et <strong>WordPress</strong>. Le choix dépend de votre projet et de vos besoins.</div></div></div>
+      <div class="faq-item" data-r><button class="faq-question" onclick="toggleFaq(this)">Vous vous occupez du nom de domaine et de l'hébergement ?<div class="faq-icon">+</div></button><div class="faq-answer"><div class="faq-answer-inner">Oui, je gère tout de A à Z : achat du nom de domaine, configuration de l'hébergement, mise en ligne et vérifications techniques.</div></div></div>
+      <div class="faq-item" data-r><button class="faq-question" onclick="toggleFaq(this)">Que se passe-t-il après la livraison du site ?<div class="faq-icon">+</div></button><div class="faq-answer"><div class="faq-answer-inner">Je reste disponible après la mise en ligne pour toute correction ou évolution. Je propose aussi des services de <strong>maintenance, SEO et communication digitale</strong>.</div></div></div>
+      <div class="faq-item" data-r><button class="faq-question" onclick="toggleFaq(this)">Je ne suis pas basé à Nice, pouvez-vous travailler avec moi ?<div class="faq-icon">+</div></button><div class="faq-answer"><div class="faq-answer-inner">Absolument ! Je travaille avec des clients dans <strong>toute la France</strong> en visioconférence. La distance n'est pas un frein.</div></div></div>
     </div>
   </div>
 </div>
 </main>
+
+<section class="cta-band" aria-label="Contact">
+  <h2 data-r>Un projet en tête ? <em>Parlons-en.</em></h2>
+  <div class="cta-actions" data-r>
+    <a class="btn-primary" href="contact.html">Demander un devis gratuit</a>
+    <button class="copie" type="button" data-mail="contact@ab-webstudio.fr">contact@ab-webstudio.fr</button>
+  </div>
+</section>
 
 <footer>
   <div class="footer-top">
@@ -303,5 +326,6 @@ async function sendContactForm(){
   }
 }
 </script>
+<script src="fx.js" defer></script>
 </body>
 </html>

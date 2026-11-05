@@ -22,8 +22,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 <link rel="stylesheet" href="style.css">
 <meta name="theme-color" content="#EFEBE3">
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__fx)document.documentElement.classList.remove("js")},4000);</script>
 </head>
-<body>
+<body class="pg-contact">
 <a class="skip-link" href="#contenu">Aller au contenu</a>
 <header class="site-header">
   <nav aria-label="Navigation principale">
@@ -44,10 +45,8 @@
 
 <main id="contenu">
 <div id="page-contact" class="page active">
+  <div class="page-head tint-sable"><div class="eyebrow">Contact</div><h1>Parlons de votre projet : devis gratuit</h1><p>Remplissez le formulaire — je vous réponds sous 48h, sans engagement.</p></div>
   <div class="section">
-    <div class="eyebrow">Contact</div>
-    <h1>Parlons de votre projet : devis gratuit</h1>
-    <p>Remplissez le formulaire — je vous réponds sous 48h, sans engagement.</p>
     <div class="contact-grid">
       <div class="contact-form">
         <input type="text" id="cf-nom" placeholder="Votre prénom & nom *">
@@ -59,7 +58,7 @@
         <button type="button" id="cf-submit" onclick="sendContactForm()">Envoyer ma demande →</button>
         <p class="contact-hint" id="cf-status">Réponse garantie sous 48h · Devis gratuit · Sans engagement</p>
       </div>
-      <div class="contact-info">
+      <div class="contact-info" data-r>
         <div class="c-item"><div class="c-icon"><i class="ti ti-mail"></i></div><div><h4>Email</h4><p>contact@ab-webstudio.fr</p></div></div>
         <div class="c-item"><div class="c-icon"><i class="ti ti-phone"></i></div><div><h4>Téléphone</h4><p>06 28 96 62 59</p></div></div>
         <div class="c-item"><div class="c-icon"><i class="ti ti-clock"></i></div><div><h4>Disponibilité</h4><p>Lundi – Samedi · 9h à 19h</p></div></div>
@@ -237,5 +236,6 @@ async function sendContactForm(){
   }
 }
 </script>
+<script src="fx.js" defer></script>
 </body>
 </html>

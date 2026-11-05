@@ -22,8 +22,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 <link rel="stylesheet" href="style.css">
 <meta name="theme-color" content="#EFEBE3">
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__fx)document.documentElement.classList.remove("js")},4000);</script>
 </head>
-<body>
+<body class="pg-service-ecommerce">
 <a class="skip-link" href="#contenu">Aller au contenu</a>
 <header class="site-header">
   <nav aria-label="Navigation principale">
@@ -55,14 +56,14 @@
     <div class="eyebrow">Ce qui est inclus</div>
     <h2>Une boutique complète et fonctionnelle</h2>
     <div class="service-features">
-      <div class="feature-item"><h3><i class="ti ti-shopping-cart"></i> Catalogue produits</h3><p>Mise en place de votre catalogue avec photos, descriptions, prix et variantes (tailles, couleurs, etc.).</p></div>
-      <div class="feature-item"><h3><i class="ti ti-credit-card"></i> Paiement sécurisé</h3><p>Intégration Stripe, PayPal ou autre passerelle de paiement. Transactions sécurisées SSL.</p></div>
-      <div class="feature-item"><h3><i class="ti ti-package"></i> Gestion des stocks</h3><p>Tableau de bord pour gérer vos produits, stocks, commandes et clients facilement.</p></div>
-      <div class="feature-item"><h3><i class="ti ti-truck"></i> Module livraison</h3><p>Configuration des modes de livraison, zones, tarifs et transporteurs selon votre activité.</p></div>
-      <div class="feature-item"><h3><i class="ti ti-trending-up"></i> SEO e-commerce</h3><p>Optimisation des fiches produits, balises, sitemap et performances pour maximiser votre visibilité.</p></div>
-      <div class="feature-item"><h3><i class="ti ti-device-mobile"></i> Mobile-first</h3><p>Expérience d'achat optimisée sur mobile — là où vos clients commandent le plus souvent.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-shopping-cart"></i> Catalogue produits</h3><p>Mise en place de votre catalogue avec photos, descriptions, prix et variantes (tailles, couleurs, etc.).</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-credit-card"></i> Paiement sécurisé</h3><p>Intégration Stripe, PayPal ou autre passerelle de paiement. Transactions sécurisées SSL.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-package"></i> Gestion des stocks</h3><p>Tableau de bord pour gérer vos produits, stocks, commandes et clients facilement.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-truck"></i> Module livraison</h3><p>Configuration des modes de livraison, zones, tarifs et transporteurs selon votre activité.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-trending-up"></i> SEO e-commerce</h3><p>Optimisation des fiches produits, balises, sitemap et performances pour maximiser votre visibilité.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-device-mobile"></i> Mobile-first</h3><p>Expérience d'achat optimisée sur mobile — là où vos clients commandent le plus souvent.</p></div>
     </div>
-    <div class="price-box">
+    <div class="price-box" data-r>
       <div><h3>Boutique E-Commerce</h3><p>PrestaShop · Shopify · WooCommerce · Livraison 3 à 6 semaines</p></div>
       <div><div class="price-amount">900€ <span>à partir de</span></div></div>
       <a href="contact.html" class="btn-primary" style="flex-shrink:0;">Demander un devis →</a>
@@ -72,6 +73,14 @@
 
 <!-- ===== SERVICE : SEO ===== -->
 </main>
+
+<section class="cta-band" aria-label="Contact">
+  <h2 data-r>Un projet en tête ? <em>Parlons-en.</em></h2>
+  <div class="cta-actions" data-r>
+    <a class="btn-primary" href="contact.html">Demander un devis gratuit</a>
+    <button class="copie" type="button" data-mail="contact@ab-webstudio.fr">contact@ab-webstudio.fr</button>
+  </div>
+</section>
 
 <footer>
   <div class="footer-top">
@@ -237,5 +246,6 @@ async function sendContactForm(){
   }
 }
 </script>
+<script src="fx.js" defer></script>
 </body>
 </html>

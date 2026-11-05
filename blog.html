@@ -22,8 +22,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 <link rel="stylesheet" href="style.css">
 <meta name="theme-color" content="#EFEBE3">
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__fx)document.documentElement.classList.remove("js")},4000);</script>
 </head>
-<body>
+<body class="pg-blog">
 <a class="skip-link" href="#contenu">Aller au contenu</a>
 <header class="site-header">
   <nav aria-label="Navigation principale">
@@ -44,10 +45,8 @@
 
 <main id="contenu">
 <div id="page-blog" class="page active">
+  <div class="page-head tint-sable"><div class="eyebrow">Ressources</div><h1>Blog &amp; conseils pour votre site web</h1><p>Des articles concrets pour améliorer votre visibilité et prendre les bonnes décisions.</p></div>
   <div class="section">
-    <div class="eyebrow">Ressources</div>
-    <h1>Blog &amp; conseils pour votre site web</h1>
-    <p>Des articles concrets pour améliorer votre visibilité et prendre les bonnes décisions.</p>
     <div class="blog-grid">
       <a href="article-seo-erreurs.html" class="blog-card"><div class="blog-body"><div class="blog-cat">SEO</div><h3>5 erreurs qui tuent votre référencement (et comment les corriger)</h3><div class="blog-meta">Juin 2026 · 7 min</div></div></a>
       <a href="article-mobile-first.html" class="blog-card"><div class="blog-body"><div class="blog-cat">Design</div><h3>Pourquoi le mobile-first est non négociable en 2026</h3><div class="blog-meta">Mai 2026 · 6 min</div></div></a>
@@ -65,6 +64,14 @@
 
 <!-- ===== LOCALISER ===== -->
 </main>
+
+<section class="cta-band" aria-label="Contact">
+  <h2 data-r>Un projet en tête ? <em>Parlons-en.</em></h2>
+  <div class="cta-actions" data-r>
+    <a class="btn-primary" href="contact.html">Demander un devis gratuit</a>
+    <button class="copie" type="button" data-mail="contact@ab-webstudio.fr">contact@ab-webstudio.fr</button>
+  </div>
+</section>
 
 <footer>
   <div class="footer-top">
@@ -230,5 +237,6 @@ async function sendContactForm(){
   }
 }
 </script>
+<script src="fx.js" defer></script>
 </body>
 </html>

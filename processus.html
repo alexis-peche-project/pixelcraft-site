@@ -22,8 +22,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 <link rel="stylesheet" href="style.css">
 <meta name="theme-color" content="#EFEBE3">
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__fx)document.documentElement.classList.remove("js")},4000);</script>
 </head>
-<body>
+<body class="pg-processus">
 <a class="skip-link" href="#contenu">Aller au contenu</a>
 <header class="site-header">
   <nav aria-label="Navigation principale">
@@ -44,16 +45,14 @@
 
 <main id="contenu">
 <div id="page-processus" class="page active">
+  <div class="page-head tint-menthe"><div class="eyebrow">Comment ça marche</div><h1>De l’idée au site en ligne : notre processus en 5 étapes</h1><p>Un processus clair, humain et sans mauvaises surprises.</p></div>
   <div class="section">
-    <div class="eyebrow">Comment ça marche</div>
-    <h1>De l’idée au site en ligne : notre processus en 5 étapes</h1>
-    <p>Un processus clair, humain et sans mauvaises surprises.</p>
     <div class="process-grid">
-      <div class="step"><div class="step-left"><div class="step-num">01</div><div class="step-line"></div></div><div class="step-body"><h3>Cahier des charges</h3><p>On définit ensemble vos objectifs, pages, charte graphique, budget et délais. Tout posé noir sur blanc avant de commencer.</p><span class="step-badge">Document partagé · Validé ensemble</span></div></div>
-      <div class="step"><div class="step-left"><div class="step-num">02</div><div class="step-line"></div></div><div class="step-body"><h3>Réunion de lancement</h3><p>30 à 60 minutes (visio ou présentiel à Nice) pour comprendre votre activité. <strong>J'écoute avant d'agir.</strong></p><span class="step-badge">Visio ou présentiel · Gratuit</span></div></div>
-      <div class="step"><div class="step-left"><div class="step-num">03</div><div class="step-line"></div></div><div class="step-body"><h3>Design & développement</h3><p>Je crée votre site en suivant le cahier des charges. Aperçu intermédiaire pour valider la direction.</p><span class="step-badge">Aperçu à mi-parcours</span></div></div>
-      <div class="step"><div class="step-left"><div class="step-num">04</div><div class="step-line"></div></div><div class="step-body"><h3>Validation & corrections</h3><p>Vous testez en conditions réelles. Un cycle de retours inclus pour affiner jusqu'à votre satisfaction totale.</p><span class="step-badge">Corrections incluses</span></div></div>
-      <div class="step"><div class="step-left"><div class="step-num">05</div><div class="step-line"></div></div><div class="step-body"><h3>Mise en ligne & suivi</h3><p>Déploiement, configuration du domaine, vérifications SEO. Je reste disponible après la livraison.</p><span class="step-badge">Support post-livraison inclus</span></div></div>
+      <div class="step" data-r><div class="step-left"><div class="step-num">01</div><div class="step-line"></div></div><div class="step-body"><h3>Cahier des charges</h3><p>On définit ensemble vos objectifs, pages, charte graphique, budget et délais. Tout posé noir sur blanc avant de commencer.</p><span class="step-badge">Document partagé · Validé ensemble</span></div></div>
+      <div class="step" data-r><div class="step-left"><div class="step-num">02</div><div class="step-line"></div></div><div class="step-body"><h3>Réunion de lancement</h3><p>30 à 60 minutes (visio ou présentiel à Nice) pour comprendre votre activité. <strong>J'écoute avant d'agir.</strong></p><span class="step-badge">Visio ou présentiel · Gratuit</span></div></div>
+      <div class="step" data-r><div class="step-left"><div class="step-num">03</div><div class="step-line"></div></div><div class="step-body"><h3>Design & développement</h3><p>Je crée votre site en suivant le cahier des charges. Aperçu intermédiaire pour valider la direction.</p><span class="step-badge">Aperçu à mi-parcours</span></div></div>
+      <div class="step" data-r><div class="step-left"><div class="step-num">04</div><div class="step-line"></div></div><div class="step-body"><h3>Validation & corrections</h3><p>Vous testez en conditions réelles. Un cycle de retours inclus pour affiner jusqu'à votre satisfaction totale.</p><span class="step-badge">Corrections incluses</span></div></div>
+      <div class="step" data-r><div class="step-left"><div class="step-num">05</div><div class="step-line"></div></div><div class="step-body"><h3>Mise en ligne & suivi</h3><p>Déploiement, configuration du domaine, vérifications SEO. Je reste disponible après la livraison.</p><span class="step-badge">Support post-livraison inclus</span></div></div>
     </div>
     <div class="tarif-highlight"><div class="icon"></div><div><h3>Tarifs <span class="amount">20 à 40% moins chers</span> qu'une agence classique</h3><p>En micro-entreprise, sans charges de structure, j'utilise les meilleurs outils pour produire plus vite et mieux.</p></div></div>
   </div>
@@ -61,6 +60,14 @@
 
 <!-- ===== BLOG ===== -->
 </main>
+
+<section class="cta-band" aria-label="Contact">
+  <h2 data-r>Un projet en tête ? <em>Parlons-en.</em></h2>
+  <div class="cta-actions" data-r>
+    <a class="btn-primary" href="contact.html">Demander un devis gratuit</a>
+    <button class="copie" type="button" data-mail="contact@ab-webstudio.fr">contact@ab-webstudio.fr</button>
+  </div>
+</section>
 
 <footer>
   <div class="footer-top">
@@ -226,5 +233,6 @@ async function sendContactForm(){
   }
 }
 </script>
+<script src="fx.js" defer></script>
 </body>
 </html>

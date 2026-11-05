@@ -22,8 +22,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 <link rel="stylesheet" href="style.css">
 <meta name="theme-color" content="#EFEBE3">
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__fx)document.documentElement.classList.remove("js")},4000);</script>
 </head>
-<body>
+<body class="pg-service-vitrine">
 <a class="skip-link" href="#contenu">Aller au contenu</a>
 <header class="site-header">
   <nav aria-label="Navigation principale">
@@ -55,14 +56,14 @@
     <div class="eyebrow">Ce qui est inclus</div>
     <h2>Tout ce dont vous avez besoin</h2>
     <div class="service-features">
-      <div class="feature-item"><h3><i class="ti ti-devices"></i> Design responsive</h3><p>Votre site s'adapte parfaitement à tous les écrans : ordinateur, tablette et mobile. Plus de 60% du trafic vient du mobile.</p></div>
-      <div class="feature-item"><h3><i class="ti ti-trending-up"></i> SEO optimisé</h3><p>Balises méta, structure HTML sémantique, vitesse de chargement — tout est pensé pour Google dès la conception.</p></div>
-      <div class="feature-item"><h3><i class="ti ti-mail"></i> Formulaire de contact</h3><p>Un formulaire fonctionnel pour recevoir les demandes de vos clients directement dans votre boîte mail.</p></div>
-      <div class="feature-item"><h3><i class="ti ti-map-pin"></i> Carte Google Maps</h3><p>Intégration de votre localisation pour faciliter la prise de contact et améliorer votre référencement local.</p></div>
-      <div class="feature-item"><h3><i class="ti ti-lock"></i> HTTPS & sécurité</h3><p>Certificat SSL inclus, site sécurisé. Indispensable pour la confiance de vos visiteurs et le référencement Google.</p></div>
-      <div class="feature-item"><h3><i class="ti ti-headset"></i> Support après livraison</h3><p>Je reste disponible après la mise en ligne pour toute question, correction ou évolution de votre site.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-devices"></i> Design responsive</h3><p>Votre site s'adapte parfaitement à tous les écrans : ordinateur, tablette et mobile. Plus de 60% du trafic vient du mobile.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-trending-up"></i> SEO optimisé</h3><p>Balises méta, structure HTML sémantique, vitesse de chargement — tout est pensé pour Google dès la conception.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-mail"></i> Formulaire de contact</h3><p>Un formulaire fonctionnel pour recevoir les demandes de vos clients directement dans votre boîte mail.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-map-pin"></i> Carte Google Maps</h3><p>Intégration de votre localisation pour faciliter la prise de contact et améliorer votre référencement local.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-lock"></i> HTTPS & sécurité</h3><p>Certificat SSL inclus, site sécurisé. Indispensable pour la confiance de vos visiteurs et le référencement Google.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-headset"></i> Support après livraison</h3><p>Je reste disponible après la mise en ligne pour toute question, correction ou évolution de votre site.</p></div>
     </div>
-    <div class="price-box">
+    <div class="price-box" data-r>
       <div><h3>Site Vitrine</h3><p>Livraison en 2 à 4 semaines · Corrections incluses · Support post-livraison</p></div>
       <div><div class="price-amount">500€ <span>à partir de</span></div></div>
       <a href="contact.html" class="btn-primary" style="flex-shrink:0;">Demander un devis →</a>
@@ -72,6 +73,14 @@
 
 <!-- ===== SERVICE : E-COMMERCE ===== -->
 </main>
+
+<section class="cta-band" aria-label="Contact">
+  <h2 data-r>Un projet en tête ? <em>Parlons-en.</em></h2>
+  <div class="cta-actions" data-r>
+    <a class="btn-primary" href="contact.html">Demander un devis gratuit</a>
+    <button class="copie" type="button" data-mail="contact@ab-webstudio.fr">contact@ab-webstudio.fr</button>
+  </div>
+</section>
 
 <footer>
   <div class="footer-top">
@@ -237,5 +246,6 @@ async function sendContactForm(){
   }
 }
 </script>
+<script src="fx.js" defer></script>
 </body>
 </html>

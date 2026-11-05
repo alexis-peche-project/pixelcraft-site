@@ -22,6 +22,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 <link rel="stylesheet" href="style.css">
 <meta name="theme-color" content="#EFEBE3">
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__fx)document.documentElement.classList.remove("js")},4000);</script>
 </head>
 <body>
 <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -100,5 +101,6 @@ function toggleMenu(){const o=document.getElementById('nav-links').classList.tog
 function closeMenu(){document.getElementById('nav-links').classList.remove('open');document.getElementById('burger').classList.remove('open');document.getElementById('burger').setAttribute('aria-expanded',false);document.body.style.overflow='';}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu();});
 </script>
+<script src="fx.js" defer></script>
 </body>
 </html>

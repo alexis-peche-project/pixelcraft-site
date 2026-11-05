@@ -22,8 +22,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 <link rel="stylesheet" href="style.css">
 <meta name="theme-color" content="#EFEBE3">
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__fx)document.documentElement.classList.remove("js")},4000);</script>
 </head>
-<body>
+<body class="pg-localiser">
 <a class="skip-link" href="#contenu">Aller au contenu</a>
 <header class="site-header">
   <nav aria-label="Navigation principale">
@@ -44,10 +45,8 @@
 
 <main id="contenu">
 <div id="page-localiser" class="page active">
+  <div class="page-head tint-menthe"><div class="eyebrow">Localisation</div><h1>Basé à Nice, actif partout en France</h1><p>Installé à Nice, j'interviens dans toute la France en visioconférence ou en présentiel.</p></div>
   <div class="section">
-    <div class="eyebrow">Localisation</div>
-    <h1>Basé à Nice, actif partout en France</h1>
-    <p>Installé à Nice, j'interviens dans toute la France en visioconférence ou en présentiel.</p>
     <div class="map-wrap"><iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92160.72891437!2d7.2188!3d43.7102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdd0106a852d31%3A0x40819a5fd979a70!2sNice!5e0!3m2!1sfr!2sfr!4v1700000000" allowfullscreen="" loading="lazy"></iframe></div>
     <div class="map-infos">
       <div class="service-card"><div class="s-icon"><i class="ti ti-video"></i></div><h3>Visioconférence</h3><p>Réunions en ligne via Google Meet ou Zoom — rapide, efficace, partout en France.</p></div>
@@ -58,6 +57,14 @@
 
 <!-- ===== CONTACT ===== -->
 </main>
+
+<section class="cta-band" aria-label="Contact">
+  <h2 data-r>Un projet en tête ? <em>Parlons-en.</em></h2>
+  <div class="cta-actions" data-r>
+    <a class="btn-primary" href="contact.html">Demander un devis gratuit</a>
+    <button class="copie" type="button" data-mail="contact@ab-webstudio.fr">contact@ab-webstudio.fr</button>
+  </div>
+</section>
 
 <footer>
   <div class="footer-top">
@@ -223,5 +230,6 @@ async function sendContactForm(){
   }
 }
 </script>
+<script src="fx.js" defer></script>
 </body>
 </html>

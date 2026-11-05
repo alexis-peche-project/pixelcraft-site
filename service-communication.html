@@ -22,8 +22,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 <link rel="stylesheet" href="style.css">
 <meta name="theme-color" content="#EFEBE3">
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__fx)document.documentElement.classList.remove("js")},4000);</script>
 </head>
-<body>
+<body class="pg-service-communication">
 <a class="skip-link" href="#contenu">Aller au contenu</a>
 <header class="site-header">
   <nav aria-label="Navigation principale">
@@ -55,14 +56,14 @@
     <div class="eyebrow">Ce qui est inclus</div>
     <h2>Une présence digitale complète</h2>
     <div class="service-features">
-      <div class="feature-item"><h3><i class="ti ti-ad"></i> Google Ads (SEA)</h3><p>Campagnes publicitaires ciblées sur Google pour apparaître en tête des résultats et générer des leads qualifiés.</p></div>
-      <div class="feature-item"><h3><i class="ti ti-map-pin"></i> Fiche Google My Business</h3><p>Optimisation et gestion de votre fiche Google : photos, avis, horaires, posts et statistiques.</p></div>
-      <div class="feature-item"><h3><i class="ti ti-brand-instagram"></i> Réseaux sociaux</h3><p>Stratégie et gestion de vos comptes Instagram et Facebook : contenus, stories, publications régulières.</p></div>
-      <div class="feature-item"><h3><i class="ti ti-chart-line"></i> Reporting mensuel</h3><p>Bilan mensuel de vos performances : clics, impressions, conversions et recommandations d'optimisation.</p></div>
-      <div class="feature-item"><h3><i class="ti ti-target"></i> Ciblage local</h3><p>Campagnes géolocalisées sur Nice, la Côte d'Azur ou toute la France selon votre activité.</p></div>
-      <div class="feature-item"><h3><i class="ti ti-palette"></i> Création visuels</h3><p>Conception de visuels professionnels pour vos posts et publicités avec Canva et Photoshop.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-ad"></i> Google Ads (SEA)</h3><p>Campagnes publicitaires ciblées sur Google pour apparaître en tête des résultats et générer des leads qualifiés.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-map-pin"></i> Fiche Google My Business</h3><p>Optimisation et gestion de votre fiche Google : photos, avis, horaires, posts et statistiques.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-brand-instagram"></i> Réseaux sociaux</h3><p>Stratégie et gestion de vos comptes Instagram et Facebook : contenus, stories, publications régulières.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-chart-line"></i> Reporting mensuel</h3><p>Bilan mensuel de vos performances : clics, impressions, conversions et recommandations d'optimisation.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-target"></i> Ciblage local</h3><p>Campagnes géolocalisées sur Nice, la Côte d'Azur ou toute la France selon votre activité.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-palette"></i> Création visuels</h3><p>Conception de visuels professionnels pour vos posts et publicités avec Canva et Photoshop.</p></div>
     </div>
-    <div class="price-box">
+    <div class="price-box" data-r>
       <div><h3>Communication Digitale</h3><p>Sur devis · Engagement mensuel ou ponctuel</p></div>
       <div><div class="price-amount">300€ <span>/ mois</span></div></div>
       <a href="contact.html" class="btn-primary" style="flex-shrink:0;">Demander un devis →</a>
@@ -72,6 +73,14 @@
 
 <!-- ===== SERVICE : SPORT BUSINESS ===== -->
 </main>
+
+<section class="cta-band" aria-label="Contact">
+  <h2 data-r>Un projet en tête ? <em>Parlons-en.</em></h2>
+  <div class="cta-actions" data-r>
+    <a class="btn-primary" href="contact.html">Demander un devis gratuit</a>
+    <button class="copie" type="button" data-mail="contact@ab-webstudio.fr">contact@ab-webstudio.fr</button>
+  </div>
+</section>
 
 <footer>
   <div class="footer-top">
@@ -237,5 +246,6 @@ async function sendContactForm(){
   }
 }
 </script>
+<script src="fx.js" defer></script>
 </body>
 </html>

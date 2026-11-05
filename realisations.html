@@ -22,8 +22,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 <link rel="stylesheet" href="style.css">
 <meta name="theme-color" content="#EFEBE3">
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__fx)document.documentElement.classList.remove("js")},4000);</script>
 </head>
-<body>
+<body class="pg-realisations">
 <a class="skip-link" href="#contenu">Aller au contenu</a>
 <header class="site-header">
   <nav aria-label="Navigation principale">
@@ -44,21 +45,27 @@
 
 <main id="contenu">
 <div id="page-realisations" class="page active">
+  <div class="page-head tint-sable"><div class="eyebrow">Portfolio</div><h1>Mes réalisations : sites web et boutiques en ligne</h1><p>Des projets concrets, en ligne, qui fonctionnent.</p></div>
   <div class="section">
-    <div class="eyebrow">Portfolio</div>
-    <h1>Mes réalisations : sites web et boutiques en ligne</h1>
-    <p>Des projets concrets, en ligne, qui fonctionnent.</p>
     <div class="real-grid">
-      <a class="real-card" href="https://sparus.fr" target="_blank" rel="noopener"><div class="real-thumb"><img src="real-sparus.png" alt="Sparus.fr"><div class="real-overlay"></div></div><div class="real-body"><h3>Sparus.fr ↗</h3><p>Site communautaire de pêche — carte interactive des spots, encyclopédie des espèces, assistant IA et communauté de pêcheurs méditerranéens.</p><span class="real-tag">GitHub Pages · OVH · SEO · IA</span></div></a>
-      <a class="real-card" href="https://tiebreak.fr" target="_blank" rel="noopener"><div class="real-thumb"><img src="real-tiebreak.png" alt="Tiebreak.fr"><div class="real-overlay"></div></div><div class="real-body"><h3>Tiebreak.fr ↗</h3><p>Boutique de vente d'équipement de tennis en ligne — raquettes, chaussures, cordages, textiles et accessoires. Développée sur PrestaShop.</p><span class="real-tag">PrestaShop · E-commerce · Tennis</span></div></a>
-      <div class="real-card vide"><div class="real-body"><h3>Votre secteur ici</h3><p>Artisan, commerçant, profession libérale — votre activité mérite une vitrine à sa hauteur.</p><span class="real-tag">À définir ensemble</span></div></div>
-      <div class="real-card vide"><div class="real-body"><h3>Prochain projet</h3><p>Envie que votre logo figure ici ? Discutons — devis gratuit, sans engagement.</p><span class="real-tag">Devis gratuit</span></div></div>
+      <a class="real-card" data-r href="https://sparus.fr" target="_blank" rel="noopener"><div class="real-thumb"><img src="real-sparus.png" alt="Sparus.fr"><div class="real-overlay"></div></div><div class="real-body"><h3>Sparus.fr ↗</h3><p>Site communautaire de pêche — carte interactive des spots, encyclopédie des espèces, assistant IA et communauté de pêcheurs méditerranéens.</p><span class="real-tag">GitHub Pages · OVH · SEO · IA</span></div></a>
+      <a class="real-card" data-r href="https://tiebreak.fr" target="_blank" rel="noopener"><div class="real-thumb"><img src="real-tiebreak.png" alt="Tiebreak.fr"><div class="real-overlay"></div></div><div class="real-body"><h3>Tiebreak.fr ↗</h3><p>Boutique de vente d'équipement de tennis en ligne — raquettes, chaussures, cordages, textiles et accessoires. Développée sur PrestaShop.</p><span class="real-tag">PrestaShop · E-commerce · Tennis</span></div></a>
+      <div class="real-card vide" data-r><div class="real-body"><h3>Votre secteur ici</h3><p>Artisan, commerçant, profession libérale — votre activité mérite une vitrine à sa hauteur.</p><span class="real-tag">À définir ensemble</span></div></div>
+      <div class="real-card vide" data-r><div class="real-body"><h3>Prochain projet</h3><p>Envie que votre logo figure ici ? Discutons — devis gratuit, sans engagement.</p><span class="real-tag">Devis gratuit</span></div></div>
     </div>
   </div>
 </div>
 
 <!-- ===== PROCESSUS ===== -->
 </main>
+
+<section class="cta-band" aria-label="Contact">
+  <h2 data-r>Un projet en tête ? <em>Parlons-en.</em></h2>
+  <div class="cta-actions" data-r>
+    <a class="btn-primary" href="contact.html">Demander un devis gratuit</a>
+    <button class="copie" type="button" data-mail="contact@ab-webstudio.fr">contact@ab-webstudio.fr</button>
+  </div>
+</section>
 
 <footer>
   <div class="footer-top">
@@ -224,5 +231,6 @@ async function sendContactForm(){
   }
 }
 </script>
+<script src="fx.js" defer></script>
 </body>
 </html>

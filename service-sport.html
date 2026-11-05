@@ -22,8 +22,9 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 <link rel="stylesheet" href="style.css">
 <meta name="theme-color" content="#EFEBE3">
+<script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__fx)document.documentElement.classList.remove("js")},4000);</script>
 </head>
-<body>
+<body class="pg-service-sport">
 <a class="skip-link" href="#contenu">Aller au contenu</a>
 <header class="site-header">
   <nav aria-label="Navigation principale">
@@ -55,14 +56,14 @@
     <div class="eyebrow">Ce qui est inclus</div>
     <h2>Une expertise sport + digital</h2>
     <div class="service-features">
-      <div class="feature-item"><h3><i class="ti ti-trophy"></i> Site club sportif</h3><p>Présentation du club, équipes, calendrier des matchs, billetterie et actualités. Un site vivant qui fidélise vos supporters.</p></div>
-      <div class="feature-item"><h3><i class="ti ti-users"></i> Espace membres</h3><p>Gestion des adhésions, inscriptions aux stages et téléchargement de documents en ligne.</p></div>
-      <div class="feature-item"><h3><i class="ti ti-shopping-cart"></i> Boutique en ligne</h3><p>Vente de maillots, équipements et merchandising directement depuis votre site.</p></div>
-      <div class="feature-item"><h3><i class="ti ti-brand-instagram"></i> Communication sport</h3><p>Stratégie réseaux sociaux adaptée au monde du sport : live, stories matchs, recrutement.</p></div>
-      <div class="feature-item"><h3><i class="ti ti-building"></i> Site fédération</h3><p>Sites institutionnels pour fédérations et ligues avec gestion des clubs membres et actualités.</p></div>
-      <div class="feature-item"><h3><i class="ti ti-certificate"></i> Formation AMOS</h3><p>Expertise sport business appliquée au digital — je parle le même langage que vous.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-trophy"></i> Site club sportif</h3><p>Présentation du club, équipes, calendrier des matchs, billetterie et actualités. Un site vivant qui fidélise vos supporters.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-users"></i> Espace membres</h3><p>Gestion des adhésions, inscriptions aux stages et téléchargement de documents en ligne.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-shopping-cart"></i> Boutique en ligne</h3><p>Vente de maillots, équipements et merchandising directement depuis votre site.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-brand-instagram"></i> Communication sport</h3><p>Stratégie réseaux sociaux adaptée au monde du sport : live, stories matchs, recrutement.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-building"></i> Site fédération</h3><p>Sites institutionnels pour fédérations et ligues avec gestion des clubs membres et actualités.</p></div>
+      <div class="feature-item" data-r><h3><i class="ti ti-certificate"></i> Formation AMOS</h3><p>Expertise sport business appliquée au digital — je parle le même langage que vous.</p></div>
     </div>
-    <div class="price-box">
+    <div class="price-box" data-r>
       <div><h3>Sport Business</h3><p>Sites clubs · Fédérations · Associations · Boutiques</p></div>
       <div><div class="price-amount">600€ <span>à partir de</span></div></div>
       <a href="contact.html" class="btn-primary" style="flex-shrink:0;">Demander un devis →</a>
@@ -72,6 +73,14 @@
 
 <!-- ===== QUI SUIS-JE ===== -->
 </main>
+
+<section class="cta-band" aria-label="Contact">
+  <h2 data-r>Un projet en tête ? <em>Parlons-en.</em></h2>
+  <div class="cta-actions" data-r>
+    <a class="btn-primary" href="contact.html">Demander un devis gratuit</a>
+    <button class="copie" type="button" data-mail="contact@ab-webstudio.fr">contact@ab-webstudio.fr</button>
+  </div>
+</section>
 
 <footer>
   <div class="footer-top">
@@ -237,5 +246,6 @@ async function sendContactForm(){
   }
 }
 </script>
+<script src="fx.js" defer></script>
 </body>
 </html>
